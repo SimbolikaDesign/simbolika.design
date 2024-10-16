@@ -1,0 +1,339 @@
+/* Estilos Generales */
+body {
+    background-color: #edeae8;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#box {
+    background-color: #F6F3F0;
+    height: 73.7031px; /* Alto*/
+    width: 1241.09px; /* Ancho*/
+    margin: 0 auto; 
+    padding: 15px;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; /* Espacio entre logo y barra de navegación */
+}
+
+.logotipo {
+    height: 70px; /* ancho */
+    width: auto; 
+    margin-right: 20px; /* espacio entre logo y barra */
+}
+
+.barra-navegacion {
+    display: flex; 
+    gap: 30px; /* Espacio entre enlaces*/
+    padding-top: 15px;
+}
+
+
+/* Estilos de texto */
+@font-face {
+    font-family: 'Relationsip Of Mélodrame';
+    src: url('Fonts/relationship-of-melodrame.ttf') format('truetype');
+}
+
+h1, h2, h3, li {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Relationship Of Mélodrame', sans-serif;
+    color: #533d43;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 40px;
+    font-family: 'Relationship Of Mélodrame', sans-serif;
+    color: #674c53;
+    text-decoration: wavy;
+}
+
+h3, h4 {
+    font-family: 'Relationship Of Mélodrame', sans-serif;
+    color: #674c53;
+    font-size: 1.5em;
+}
+
+p {
+    text-align: left;
+    margin: 10px 0;
+}
+
+ul, ol {
+    padding-left: 0;
+    text-align: left;
+    margin-left: 20px;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #F6F3F0;
+    color: #fff;
+    text-align: center;
+}
+
+.redes-sociales a {
+    margin: 0 10px;
+}
+
+.logoredes {
+    width: 30px;
+    height: auto;
+}
+
+/* Estilos de las cards */
+.plantilla-card {
+    display: flex;
+    flex-direction: column; /* Orden en columna */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.247);
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 80px;
+    margin: 50px 0;
+    margin-left: 70px;
+    max-width: 1000px;
+}
+
+/* Estilos de la sección de Shop */
+.pack-full {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gif-plantillas {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.descripcion-pack {
+    flex-grow: 1;
+    text-align: left;
+}
+
+/* Estilos de botones */
+button {
+    background-color: #533d43;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #674c53;
+}
+
+/* Estilo para la imagen centrada */
+.centered-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 800px;
+    height: auto;
+}
+
+/* Estilos de botones - links */
+a {
+    text-decoration: none;
+    color: #533d43;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.crear-marca {
+    background-color: #533d43;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.crear-marca:hover {
+    background-color: #674c53;
+}
+
+/* PAGINA CONTACTOS */
+
+#p-contacto{
+    text-align: center;
+}
+.formulario-simbolika {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 20px; 
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.formulario-simbolika label {
+    display: inline-block;
+    text-align: left; /* afecta al texto del label (a la derecha) */
+    margin-bottom: 10px;
+    width: 100%; 
+}
+
+.formulario-simbolika input, 
+.formulario-simbolika textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.formulario-simbolika input[type="radio"] {
+    width: auto;
+    
+}
+
+.formulario-simbolika label[for^="opcion"],
+.formulario-simbolika label[for^="presupuesto"],
+.formulario-simbolika label[for^="conociste"] {
+    width: 50%;
+    display: flex; 
+    align-items: center; 
+}
+
+.formulario-simbolika textarea {
+    resize: vertical; 
+}
+
+/* PAGINA RECURSOS*/
+
+.tarjeta {
+    background-color: #ffffff; 
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    margin-bottom: 20px; /* Espacio entre tarjetas */
+}
+
+h1 {
+    margin-top: 10px; 
+}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 40px; 
+}
+
+/*Sección diccionario*/
+
+.diccionario-grilla {
+    display: grid; /* declara grilla */
+    grid-template-columns: repeat(6, minmax(150px, 1fr)); 
+    gap: 15px; 
+    list-style-type: none; 
+    padding: 10px; 
+    margin: 20px 0; 
+}
+
+.diccionario-grilla li {
+    background-color: #F6F3F0;
+    padding: 10px; 
+    border-radius: 8px;
+    text-align: center; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.308); /* Sombra */
+    transition: background-color 0.3s, transform 0.3s; /* Suaviza la transform. */
+}
+
+.diccionario-grilla li:hover {
+    background-color: #eae3e0; 
+    transform: scale(1.05); /* mas tamaño */
+    cursor: pointer; 
+}
+
+.enlace-servicios {
+    color: #061e38; 
+    text-decoration: none;
+}
+
+.enlace-servicios:hover {
+    text-decoration: underline; /* subray del hover*/
+}
+
+
+
+/*Sección Blog*/
+
+.titulo-blog {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.section-blog {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px;
+}
+
+.entrada {
+    display: flex;
+    align-items: flex-start; 
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #F6F3F0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 100%;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.imagen-entrada {
+    width: 250px; 
+    height: auto;
+    margin-right: 15px; /* Espacio entre foto y contenido*/
+}
+
+.contenido-texto {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+.entrada h2 {
+    margin: 0 0 10px 0; 
+    line-height: 40px; /* Interlineado */
+}
+
+
+.entrada h2 a:hover {
+    text-decoration: underline;
+}
+
+.entrada:hover {
+    background-color: #EAE9E6;
+    transform: translateY(-5px);
+}
+
+/*Sección Ebook Gratis*/
