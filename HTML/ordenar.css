@@ -1,0 +1,703 @@
+
+/*______________________ Estilos Generales de todas las paginas______________________ */
+
+
+/* Encabezado de todas las paginas*/
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#box {
+    border-radius: 80px;
+    background-color: #F6F3F0;
+    height: 73.7031px; /* Alto*/
+    width: 1241.09px; /* Ancho*/
+    margin: 0 auto; 
+    padding: 15px;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; /*entre logo y barra de nav*/
+}
+
+.logotipo {
+    height: 70px;
+    width: auto; 
+    margin-right: 20px; /*entre logo y barra */
+}
+
+.barra-navegacion {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex; 
+    gap: 30px; /*entre enlaces*/
+    padding-top: 15px;
+    margin-bottom: 25px;
+}
+
+
+body {
+    background-color: #edeae8;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 20px;
+}
+
+
+
+/* Estilos de texto */
+@font-face {
+    font-family: 'Relationsip Of Mélodrame';
+    src: url('Fonts/relationship-of-melodrame.ttf') format('truetype');
+}
+
+h1, h2, h3, li {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Relationship Of Mélodrame', sans-serif;
+    color: #533d43;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 40px;
+    font-family: 'Relationship Of Mélodrame', sans-serif;
+    color: #674c53;
+    text-decoration: wavy;
+}
+
+h3, h4 {
+    font-family: 'Relationship Of Mélodrame', sans-serif;
+    color: #674c53;
+    font-size: 20px;
+}
+
+p {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    margin: 10px 0;
+}
+
+ul, ol {
+    padding-left: 0;
+    text-align: left;
+    margin-left: 20px;
+}
+
+
+/* Estilos de botones */
+button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #533d43;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #674c53;
+}
+
+a {
+    text-decoration: none;
+    color: #533d43;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.crear-marca {
+    
+    background-color: #533d43;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+    margin-left: 15px;
+    margin-bottom: 25px;
+}
+
+.crear-marca:hover {
+    background-color: #674c53;
+}
+
+.descubrir-servicios {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* Estilo general de las cards de todas las paginas */
+.plantilla-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.247);
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 80px;
+    margin: 50px 0;
+    margin-left: 70px;
+    max-width: 1000px;
+}
+
+/* Footer de todas las páginas */
+
+.h2-footer {
+    font-size: 2rem;
+}
+
+footer {
+    border-radius: 80px;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #F6F3F0;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.redes-sociales {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center; 
+    gap: 15px; 
+}
+
+.logoredes {
+    width: 30px;
+    height: auto;
+}
+
+footer a {
+    margin: 0 10px; 
+    text-decoration: none; 
+    color: #000;
+}
+
+footer a:hover {
+    color: #555; 
+}
+
+footer div,
+footer a {
+    display: flex;
+    flex-wrap: wrap; /* Permitir ajuste si es necesario */
+    justify-content: center;
+}
+
+
+/*______________________ PAGINA DE INICIO ______________________ */
+
+.banner {
+width: 1300px;
+height: 359px;
+}
+
+.centered-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 800px;
+    height: auto;
+}
+
+.parrafo-index {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.card-index {
+display: flex;
+flex-direction: column;
+background-color: #fff;
+border-radius: 80px;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.247);
+padding: 40px;
+margin: 50px;
+max-width: 100%;
+}
+
+/*slide infinito*/
+.marquee {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    align-items: center;
+}
+
+.marquee img {
+    width: 400px; /* tamaño*/
+    margin-right: 10px; /* Espacio entre imágenes */
+    animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-80%);
+    }
+}
+
+/*acordeon beneficios*/
+
+.h1-benef {
+font-size: 48px;
+margin: 0;
+padding: 0;
+}
+
+.accordion-button {
+    padding-left: 40px;
+    font-size: 1.7rem; 
+}
+
+.accordion-button:hover {
+    background-color: #f0f0f0; 
+    color: #3333336b; 
+}
+
+.accordion-body {
+    font-size: 1.1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 50px;
+    padding-right: 30px;
+    text-align: start;
+}
+
+/* detrás de escena */
+.card-escena {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #e789ff2f;
+    border-radius: 80px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.61);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    margin: 50px 0;
+    margin-left: 160px;
+    max-width: 1000px;
+}
+
+.derecha1 {
+    text-align: right;
+    padding-top: 40px;
+    padding-right: 60px;
+}
+
+.derecha3 {
+    text-align: right;
+    padding-right: 60px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.presentacion {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contenido-presentacion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px; 
+}
+
+.foto-perfil {
+    width: 300px; 
+    height: 700px;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+#flor-perfil {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.9rem;
+    margin-right: 40px;
+}
+
+.descubrir-servicios {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* ______________________ PAGINA SERVICIOS ______________________ */
+
+.servicios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas de igual ancho */
+    gap: 20px; 
+    justify-content: center;
+    padding-top: 50px;
+}
+
+/*cards*/
+.cards-servicios {
+    align-items: center;
+        background-color: #ffffff93;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.61);
+        padding: 30px;
+        max-width: 100%;
+        height: 600px;
+        margin: 15px;
+    }
+
+.imagenes-servicios {
+    width: 90%;
+    height: 75%;
+    border-radius: 8px; 
+}
+
+.p-card-serv {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-left: 25px;
+    width: 90%;
+}
+
+/* ______________________ PAGINA PORTFOLIO ______________________ */
+
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    gap: 20px; 
+    padding-top: 0;
+}
+
+.cards-portfolio {
+align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.61);
+    padding: 35px;
+    max-width: 100%;
+    height: 600px;
+    margin: 15px;
+}
+
+.foto-portfolio {
+    width: 100%;
+    height: 400px;
+    border-radius: 8px;
+}
+
+.p-portfolio {
+margin-top: 0;
+margin-bottom: 35px;
+padding-bottom: 50px;    
+}
+
+
+/*______________________ PAGINA DE SHOP ______________________ */
+
+
+.baseline-shop{
+    font-family: Georgia;
+    font-size: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: justify;
+    }
+    
+    /* banda for designers*/
+    .banda-container {
+        width: 100%;
+        overflow: hidden;
+        background-color: #533d43f5;
+        padding: 10px;
+    }
+    
+    .banda-texto {
+        display: flex; 
+        white-space: nowrap;
+        animation: textoScroll 10s linear infinite;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 2rem; 
+        color: rgb(211, 203, 203);
+    }
+    
+    @keyframes textoScroll {
+        0% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+    .h3-banda {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    .p-deltitulo {
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: center
+    }
+    
+    /* seccion todo cambia con el proceso correcto */
+    .container-fluid {
+        width: 80%;
+        background-color: #533d43f5;
+        padding: 20px;
+        border-radius: 20px;
+    }
+    
+    .container-fluid h1 {
+        color: rgb(211, 203, 203);
+        text-align: center; 
+        padding: 10px;
+    }
+    
+    .card {
+        margin: 10px; /* Espacio entre tarjetas */
+        background-color: #ffecf2d5;
+        border-radius: 10px; 
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .card-body {
+        padding: 20px;
+    }
+    
+    .container-fluid h3 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(83, 61, 67);
+    }
+    /* fin seccion proceso*/
+    
+    .cards-shop {
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.247);
+            padding: 50px;
+            margin: 50px auto;
+            max-width: 80%; 
+            justify-content: center;
+            align-items: center; 
+        }    
+    
+    .cards-shop h1 {
+    padding-top: 0;
+    padding-bottom: 25px;
+    }
+    
+    
+    .pack-full {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .gif-plantillas {
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+        margin-right: 20px;
+    }
+    
+    .descripcion-pack {
+        flex-grow: 1;
+        text-align: left;
+    }
+
+    /* ______________________ PAGINA RECURSOS ______________________ */
+
+.tarjeta {
+    background-color: #ffffff; 
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    margin-bottom: 20px; /* Espacio entre tarjetas */
+}
+
+h1 {
+    margin-top: 10px; 
+}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 40px; 
+}
+
+/*Sección diccionario*/
+
+.diccionario-grilla {
+    display: grid; /* declara grilla */
+    grid-template-columns: repeat(6, minmax(150px, 1fr)); 
+    gap: 15px; 
+    list-style-type: none; 
+    padding: 10px; 
+    margin: 20px 0; 
+}
+
+.diccionario-grilla li {
+    background-color: #F6F3F0;
+    padding: 10px; 
+    border-radius: 8px;
+    text-align: center; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.308); /* Sombra */
+    transition: background-color 0.3s, transform 0.3s; /* Suaviza la transform. */
+}
+
+.diccionario-grilla li:hover {
+    background-color: #eae3e0; 
+    transform: scale(1.05); /* mas tamaño */
+    cursor: pointer; 
+}
+
+.enlace-servicios {
+    color: #061e38; 
+    text-decoration: none;
+}
+
+.enlace-servicios:hover {
+    text-decoration: underline; /* subray del hover*/
+}
+
+
+
+/*Sección Blog*/
+
+.titulo-blog {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.section-blog {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px;
+}
+
+.entrada {
+    display: flex;
+    align-items: flex-start; 
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #F6F3F0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 100%;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.imagen-entrada {
+    width: 250px; 
+    height: auto;
+    margin-right: 15px; /* Espacio entre foto y contenido*/
+}
+
+.contenido-texto {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+.entrada h2 {
+    margin: 0 0 10px 0; 
+    line-height: 40px; /* Interlineado */
+}
+
+
+.entrada h2 a:hover {
+    text-decoration: underline;
+}
+
+.entrada:hover {
+    background-color: #EAE9E6;
+    transform: translateY(-5px);
+}
+
+/*Sección Ebook Gratis*/
+
+
+/* ______________________ PAGINA CONTACTOS ______________________ */
+
+.v-contactos {
+    width: 1270px;
+    height: auto;
+    
+    }
+    
+    #p-contacto{
+        text-align: center;
+    }
+    .formulario-simbolika {
+        display: grid;
+        grid-template-columns: 1fr; 
+        gap: 20px; 
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .formulario-simbolika label {
+        display: inline-block;
+        text-align: left; /* afecta al texto del label (a la derecha) */
+        margin-bottom: 10px;
+        width: 100%; 
+    }
+    
+    .formulario-simbolika input, 
+    .formulario-simbolika textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        box-sizing: border-box;
+    }
+    
+    .formulario-simbolika input[type="radio"] {
+        width: auto;
+        
+    }
+    
+    .formulario-simbolika label[for^="opcion"],
+    .formulario-simbolika label[for^="presupuesto"],
+    .formulario-simbolika label[for^="conociste"] {
+        width: 50%;
+        display: flex; 
+        align-items: center; 
+    }
+    
+    .formulario-simbolika textarea {
+        resize: vertical; 
+    }
+    
+    
