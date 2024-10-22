@@ -3,20 +3,25 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="Simbolika-Design" content="Servicios-Digitales">
+  <title> Formulario de Contacto para Branding y Servicios Digitales | Simbolika Design</title>
+  <meta name="description" content="Nos inspiran las historias. Cuéntanos todo sobre tu proyecto.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Simbolika Design, Florencia Tello">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
   <!-- Bootstrap JS (necesario para el carrusel) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+
   <!-- mi css style-->
   <link rel="stylesheet" href="style.css">
-  <title>Simbolika Design</title>
 </head>
 
-<!-- seccion formulario-->
 
 <body>
   <!-- Header -->
@@ -35,155 +40,156 @@
       <a href="j3 Contactos.html"><button class="crear-marca">Quiero crear mi marca</button></a>
     </div>
   </header>
-  <MAIN>
-    <br>
-    <img class="v-contactos" src="Fotos y Videos/gift contacto.gif" alt="">
+  <!--Fin header-->
 
-    <!-- FORMULARIO-->
-    <h1>Nos inspiran las historias. <em>Cuéntanos todo sobre tu proyecto</em> </h1>
-    <p id="p-contacto">Responde las siguientes preguntas después de haber visitado la
-      página de servicios.
-      Recibirás una respuesta en menos de 48 horas.</p>
+  <br>
+  <img class="v-contactos" src="Fotos y Videos/gift contacto.gif" alt="Video estetico sobre formulario">
 
-    <section class=".plantilla-card">
-      <div class="formulario-simbolika">
-        <form class="formulario" action="#" method="POST">
+  <!-- FORMULARIO-->
+  <h1>Nos inspiran las historias. <em>Cuéntanos todo sobre tu proyecto</em></h1>
+  <p id="p-contacto">Responde las siguientes preguntas después de haber visitado la página de servicios. Recibirás una
+    respuesta en menos de 48 horas.</p>
 
-          <label for="nombre">Tu Nombre Completo:</label>
-          <input type="text" id="nombre" name="nombre" required>
-          <br><br>
+  <section class="card-form">
+    <div class="formulario-simbolika">
+      <form class="formulario" action="procesar_formulario.php" method="POST">
+        <!-- nombre completo -->
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Tu Nombre Completo:</label>
+          <input type="text" class="form-control" id="nombre" name="nombre" required>
+        </div>
+        <!-- pais -->
+        <div class="mb-3">
+          <label for="pais" class="form-label">País de donde escribes:</label>
+          <input type="text" class="form-control" id="pais" name="pais" required>
+        </div>
+        <!-- email -->
+        <div class="mb-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <!-- interés -->
+        <fieldset class="mb-3">
+          <legend class="text-start">Estoy interesado en:</legend>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="branding" name="interes" value="branding" required>
+            <label class="form-check-label" for="branding">Branding</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="social" name="interes" value="social">
+            <label class="form-check-label" for="social">Social Media</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="packaging" name="interes" value="packaging">
+            <label class="form-check-label" for="packaging">Packaging y Papelería</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="web" name="interes" value="web">
+            <label class="form-check-label" for="web">Diseño y Desarrollo Web</label>
+          </div>
+        </fieldset>
+        <!-- naming -->
+        <div class="mb-3">
+          <label for="marca" class="form-label">Nombre de tu marca o proyecto:</label>
+          <input type="text" class="form-control" id="marca" name="marca" required>
+        </div>
+        <!-- redes -->
+        <div class="mb-3">
+          <label for="pagina" class="form-label">Instagram o Página web que ya tengas:</label>
+          <input type="text" class="form-control" id="pagina" name="pagina" required>
+        </div>
+        <!-- objetivos -->
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">De qué se trata el proyecto y que deseas lograr? Cuál es nuestro
+            objetivo?:</label>
+          <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+        </div>
 
-          <label for="pais">País de donde escribes:</label>
-          <input type="text" id="pais" name="pais" required>
-          <br><br>
+        <!-- Presupuesto -->
+        <fieldset class="mb-3">
+          <legend class="text-start">Cuál es tu presupuesto?</legend>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="presupuesto1" name="presupuesto" value="100-200" required>
+            <label class="form-check-label" for="presupuesto1">Entre 100 y 200 USD</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="presupuesto2" name="presupuesto" value="200-400">
+            <label class="form-check-label" for="presupuesto2">Entre 200 y 400 USD</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="presupuesto3" name="presupuesto" value="400-700">
+            <label class="form-check-label" for="presupuesto3">Entre 400 y 700 USD</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="presupuesto4" name="presupuesto" value="700-1500">
+            <label class="form-check-label" for="presupuesto4">Entre 700 y 1500 USD</label>
+          </div>
+        </fieldset>
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-          <br><br>
+        <!-- Cómo me conociste -->
+        <fieldset class="mb-3">
+          <legend class="text-start">Cómo me conociste?</legend>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="instagram" name="conociste" value="instagram" required>
+            <label class="form-check-label" for="instagram">Instagram</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="pinterest" name="conociste" value="pinterest">
+            <label class="form-check-label" for="pinterest">Pinterest</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="google" name="conociste" value="google">
+            <label class="form-check-label" for="google">Google</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="amigo" name="conociste" value="amigo">
+            <label class="form-check-label" for="amigo">Recomendación de un amigo</label>
+          </div>
+        </fieldset>
 
-          <label>Estoy interesado en:</label><br>
-          <label for="branding">
-            <input type="radio" id="branding" name="interes" value="branding" required>
-            Branding
-          </label><br>
-
-          <label for="social">
-            <input type="radio" id="social" name="interes" value="social">
-            Social Media
-          </label><br>
-
-          <label for="packaging">
-            <input type="radio" id="packaging" name="interes" value="packaging">
-            Packaging y Papelería
-          </label><br>
-
-          <label for="web">
-            <input type="radio" id="web" name="interes" value="web">
-            Diseño y Desarrollo Web
-          </label><br>
-
-
-          <label for="marca">Nombre de tu marca o proyecto:</label>
-          <input type="text" id="marca" name="marca" required>
-          <br><br>
-
-          <label for="pagina">Instagram o Página web que ya tengas:</label>
-          <input type="text" id="pagina" name="pagina" required>
-          <br><br>
-
-          <label for="mensaje">De qué se trata el proyecto y que deseas lograr? Cuál es nuestro objetivo?:</label>
-          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-          <br><br>
-
-          <label>Cuál es tu presupuesto?:</label><br>
-          <label for="presupuesto1">
-            <input type="radio" id="presupuesto1" name="presupuesto" value="100-200" required>
-            Entre 100 y 200 USD
-          </label><br>
-
-          <label for="presupuesto2">
-            <input type="radio" id="presupuesto2" name="presupuesto" value="200-400">
-            Entre 200 y 400 USD
-          </label><br>
-
-          <label for="presupuesto3">
-            <input type="radio" id="presupuesto3" name="presupuesto" value="400-700">
-            Entre 400 y 700 USD
-          </label><br>
-
-          <label for="presupuesto4">
-            <input type="radio" id="presupuesto4" name="presupuesto" value="700-1500">
-            Entre 700 y 1500 USD
-          </label><br>
-
-          <br>
-
-          <label>Cómo me conociste?:</label><br>
-          <label for="instagram">
-            <input type="radio" id="instagram" name="conociste" value="instagram" required>
-            Instagram
-          </label><br>
-
-          <label for="pinterest">
-            <input type="radio" id="pinterest" name="conociste" value="pinterest">
-            Pinterest
-          </label><br>
-
-          <label for="google">
-            <input type="radio" id="google" name="conociste" value="google">
-            Google
-          </label><br>
-
-          <label for="amigo">
-            <input type="radio" id="amigo" name="conociste" value="amigo">
-            Recomendación de un amigo
-          </label><br>
-
-
-        </form>
-      </div>
-
-      <br>
-      <p>Al enviar este formulario, acepta que almacenemos sus datos para gestionar su consulta. Ante cualquier duda
-        consulte nuestra Política de privacidad o contáctenos a través de
-        simbolicadesign@gmail.com .
-        Gracias.</p>
-
-      <button type="submit">Enviar mi info</button>
+        <!-- enviar info - boton -->
+        <br>
+        <p>Al enviar este formulario, acepta que almacenemos sus datos para gestionar su consulta. Ante cualquier duda
+          consulte nuestra Política de privacidad o contáctenos a través de simbolikadesign@gmail.com. Gracias.</p>
+        <br>
+        <button type="submit" class="button">Enviar mi info</button>
       </form>
-    </section>
+    </div>
+  </section>
 
-    <!-- video resumen proyectos, logos, mockups, etc-->
-    <h1><em> ~ Creamos marcas de profundo impacto ~</em></h1>
-    <img src="Fotos y Videos/gif plantillas.gif" alt="">
+
+  <!-- video resumen proyectos, logos, mockups, etc-->
+  <h1><em> ~ Creamos marcas de profundo impacto ~</em></h1>
+  <img src="Fotos y Videos/gif plantillas.gif" alt="Video inspiracional y resumen de proyectos">
+
+
+  <!-- pie-->
+  <footer>
+    <h2>Síguenos en nuestras redes sociales</h2>
+    <div class="redes-sociales">
+      <a href="https://www.instagram.com/simbolika.design" target="_blank">
+        <img src="Fotos y Videos/instagram.png" alt="Instagram" class="logoredes">
+      </a>
+      <a href="https://ar.pinterest.com/simbolikadesign" target="_blank">
+        <img src="Fotos y Videos/pinterest.png" alt="Pinterest" class="logoredes">
+      </a>
+      <a href="https://www.behance.net/florsimbolikadesign" target="_blank">
+        <img src="Fotos y Videos/behance.png" alt="Behance" class="logoredes">
+      </a>
+    </div>
+
+    <br><a href="j1 Nuestros Servicios.html"> Nuestros Servicios</a>
+    <a href="j1 Portfolio.html">Portfolio</a>
+    <a href="j1 Shop.html">Shop</a>
+    <a href="j2 Recursos.html">Recursos</a>
+    <a href="j3 Contactos.html">Contacto</a>
+
+
+
+    <br><a href="Términos & Condiciones"> Términos & Condiciones</a> <a href="Politica de privacidad">Politica de
+      privacidad</a> <a href="Politica de Cookies">Politica de Cookies</a> <a href="Trabajemos Juntos">Trabajemos
+      Juntos</a>
+  </footer>
 </body>
-</MAIN>
-<!-- pie-->
-<footer>
-  <h3>Síguenos en nuestras redes sociales</h3>
-  <div class="redes-sociales">
-    <a href="https://www.instagram.com/simbolika.design" target="_blank">
-      <img src="Fotos y Videos/instagram.png" alt="Instagram" class="logoredes">
-    </a>
-    <a href="https://https://ar.pinterest.com/simbolikadesign" target="_blank">
-      <img src="Fotos y Videos/pinterest.png" alt="Pinterest" class="logoredes">
-    </a>
-    <a href="https://www.behance.net/florsimbolikadesign" target="_blank">
-      <img src="Fotos y Videos/behance.png" alt="Behance" class="logoredes">
-    </a>
-  </div>
-
-  <br><a href="j1 Nuestros Servicios.html"> Nuestros Servicios</a>
-  <a href="j1 Portfolio.html">Portfolio</a>
-  <a href="j1 Shop.html">Shop</a>
-  <a href="j2 Recursos.html">Recursos</a>
-  <a href="j3 Contactos.html">Contacto</a>
-
-
-
-  <br><a href="Términos & Condiciones"> Términos & Condiciones</a> <a href="Politica de privacidad">Politica de
-    privacidad</a> <a href="Politica de Cookies">Politica de Cookies</a> <a href="Trabajemos Juntos">Trabajemos
-    Juntos</a>
-</footer>
 
 </html>
