@@ -1,0 +1,17 @@
+/* _________________________MEDIA QUERIES DESKTOP GRANDES_________________________ */
+
+@media (min-width: 1440px) and (max-width: 1920px) {
+
+    /* Media Queries DESKTOP GRANDES (Asus ZenBook, MacBook Pro Retina,Dell XPS 15 y similares)*/
+
+    .contenedor-footer {
+        width: 70%;
+        height: auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+}

@@ -193,7 +193,7 @@ h1 {
 .banda-containerindex {
   width: 100%;
   overflow: hidden;
-  background-color: rgba(83, 61, 67, 0.9607843137);
+  background-color: #533d43f5;
   padding: 10px;
 }
 .banda-containerindex .banda-textolinks {
@@ -201,10 +201,10 @@ h1 {
   white-space: nowrap;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 2rem;
-  color: rgb(211, 203, 203);
+  color: #d3cbcb;
 }
 .banda-containerindex .banda-textolinks a {
-  color: rgb(211, 203, 203);
+  color: #d3cbcb;
   cursor: pointer;
   padding-left: 25%;
   padding-right: 25%;
@@ -274,7 +274,7 @@ section .marquee img {
 }
 .card-index .accordion-item h2.accordion-header .accordion-button:hover {
   background-color: #f0f0f0;
-  color: rgba(51, 51, 51, 0.4196078431);
+  color: #3333336b;
 }
 .card-index .accordion-item h2.accordion-header .accordion-collapse .accordion-body {
   font-size: 35px;
@@ -288,7 +288,7 @@ section .marquee img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgba(231, 137, 255, 0.1843137255);
+  background-color: #e789ff2f;
   border-radius: 80px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.61);
   padding: 30px;
@@ -364,7 +364,7 @@ h1 {
 }
 .servicios .cards-servicios {
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.5764705882);
+  background-color: #ffffff93;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.61);
   padding: 30px;
@@ -414,7 +414,7 @@ h1 {
 }
 .card-faq .accordion .accordion-item .accordion-header .accordion-button:hover {
   background-color: #f0f0f0;
-  color: rgba(51, 51, 51, 0.4196078431);
+  color: #3333336b;
 }
 .card-faq .accordion .accordion-item .accordion-collapse .accordion-body {
   font-size: 1.1rem;
@@ -477,7 +477,7 @@ h3.h3-banda {
   width: 100%;
   height: auto;
   overflow: hidden;
-  background-color: rgba(83, 61, 67, 0.9607843137);
+  background-color: #533d43f5;
   padding: 10px;
 }
 .banda-container .banda-texto {
@@ -486,7 +486,7 @@ h3.h3-banda {
   animation: textoScroll 10s linear infinite;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 2rem;
-  color: rgb(211, 203, 203);
+  color: #d3cbcb;
   padding: 10px;
 }
 .banda-container .banda-texto p {
@@ -563,7 +563,7 @@ section .container-fluid h1 {
 section .container-fluid .row .col-md-6 .card {
   margin: 2%;
   padding: 2%;
-  background-color: rgba(255, 236, 242, 0.8352941176);
+  background-color: #ffecf2d5;
   border-radius: 80px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -572,13 +572,13 @@ section .container-fluid .row .col-md-6 .card .card-body {
 }
 section .container-fluid .row .col-md-6 .card .card-body h3 {
   font-family: Georgia, "Times New Roman", Times, serif;
-  color: rgb(83, 61, 67);
+  color: #533d43;
   margin: 10px 0 0 0;
   padding: 0;
 }
 section .container-fluid .row .col-md-6 .card .card-body p {
   font-family: Georgia, "Times New Roman", Times, serif;
-  color: rgb(83, 61, 67);
+  color: #533d43;
   padding: 15px 15px;
   padding-bottom: 0;
   text-align: center;
@@ -676,7 +676,7 @@ section .container-fluid .row .col-md-6 .card .card-body p {
 .card-form {
   display: flex;
   flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.5019607843);
+  background-color: #ffffff80;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
   padding: 50px;
@@ -742,12 +742,14 @@ fieldset legend {
     flex-direction: column;
     align-items: center;
   }
+
   .logotipo {
     height: 70px;
     width: auto;
     padding-top: 5px;
     padding-bottom: 0px;
   }
+
   .barra-navegacion {
     font-size: 17px;
     font-family: Georgia, "Times New Roman", Times, serif;
@@ -757,6 +759,7 @@ fieldset legend {
     width: 90%;
     padding-top: 15px;
   }
+
   .barra-navegacion a {
     flex: 0 1 calc(50% - 10px);
     text-align: center;
@@ -764,6 +767,7 @@ fieldset legend {
     box-sizing: border-box;
     padding-top: 15px;
   }
+
   .crear-marca {
     background-color: #533d43;
     color: white;
@@ -774,6 +778,7 @@ fieldset legend {
     cursor: pointer;
     margin: 10px;
   }
+
   .banner {
     width: 300px;
     height: auto;
@@ -781,6 +786,7 @@ fieldset legend {
     justify-content: center;
     padding: 10px;
   }
+
   .h1 {
     text-align: center;
     font-family: "Relationship Of Mélodrame", sans-serif;
@@ -788,33 +794,38 @@ fieldset legend {
     font-size: 1rem;
     margin-bottom: 8px;
   }
+
   .banda-containerindex {
     width: 300px;
     overflow: hidden;
-    background-color: rgba(83, 61, 67, 0.9607843137);
+    background-color: #533d43f5;
     padding: 0;
   }
+
   .banda-textolinks {
     display: table-column;
     flex-wrap: wrap;
     font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 1rem;
-    color: rgb(211, 203, 203);
+    color: #d3cbcb;
     justify-content: center;
   }
+
   .banda-textolinks a {
-    color: rgb(211, 203, 203);
+    color: #d3cbcb;
     cursor: pointer;
     padding: 5px 8%;
     flex: 1 1 40%;
     text-align: center;
     box-sizing: border-box;
   }
+
   .parrafo-index {
     font-size: 17px;
     font-family: Georgia, "Times New Roman", Times, serif;
     margin: 10px;
   }
+
   .card-index {
     display: flex;
     flex-direction: column;
@@ -825,18 +836,22 @@ fieldset legend {
     margin: 10px;
     max-width: 100%;
   }
+
   .marquee img {
     width: 100%;
     height: auto;
   }
+
   .h2-benef {
     font-size: 30px;
     padding: 10px;
   }
+
   .accordion-button {
     font-size: 1.5rem;
     padding-left: 20px;
   }
+
   .card-escena {
     padding: 7px;
     margin-left: 7px;
@@ -845,30 +860,36 @@ fieldset legend {
     flex-direction: column;
     align-items: center;
   }
+
   .derecha1,
-  .derecha3 {
+.derecha3 {
     padding-right: 15px;
   }
+
   .contenido-presentacion {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .foto-perfil {
     width: 230px;
     height: auto;
     border-radius: 30px;
     margin: 15px 0;
   }
+
   #flor-perfil {
     font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 0.9rem;
     margin-top: 5px;
     margin-left: 40px;
   }
+
   .h2-footer {
     font-size: 2rem;
   }
+
   footer {
     border-radius: 80px;
     font-size: 18px;
@@ -882,32 +903,38 @@ fieldset legend {
     flex-direction: column;
     align-items: center;
   }
+
   .redes-sociales {
     display: flex;
     flex-direction: row;
     gap: 7px;
     margin: 10px 0;
   }
+
   .logoredes {
     display: flex;
     flex-direction: row;
     width: 50px;
     height: auto;
   }
+
   footer a {
     margin: 0 10px;
     text-decoration: none;
     color: #533d43;
   }
+
   footer a:hover {
     color: #555;
   }
+
   footer div {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+
   /* Media Queries MOBILE SERVICIOS (iPhone 3/4/4s y similares)*/
   #box {
     border-radius: 80px;
@@ -922,12 +949,14 @@ fieldset legend {
     flex-direction: column;
     align-items: center;
   }
+
   .logotipo {
     height: 70px;
     width: auto;
     padding-top: 5px;
     padding-bottom: 0px;
   }
+
   .barra-navegacion {
     font-size: 17px;
     font-family: Georgia, "Times New Roman", Times, serif;
@@ -937,6 +966,7 @@ fieldset legend {
     width: 90%;
     padding-top: 15px;
   }
+
   .barra-navegacion a {
     flex: 0 1 calc(50% - 10px);
     text-align: center;
@@ -944,6 +974,7 @@ fieldset legend {
     box-sizing: border-box;
     padding-top: 15px;
   }
+
   .crear-marca {
     background-color: #533d43;
     color: white;
@@ -954,44 +985,54 @@ fieldset legend {
     cursor: pointer;
     margin: 10px;
   }
+
   .servicios {
     grid-template-columns: 1fr;
     padding-top: 20px;
     gap: 10px;
   }
+
   .cards-servicios {
     padding: 15px;
     height: auto;
     margin: 10px;
   }
+
   .imagenes-servicios {
     width: 100%;
     height: auto;
   }
+
   .p-card-serv {
     font-size: 0.9rem;
     margin-left: 0;
     text-align: center;
     width: 100%;
   }
+
   .card-faq {
     width: 100%;
     margin: 0;
   }
+
   .accordion-button {
     font-size: 1.2rem;
     padding-left: 20px;
   }
+
   .accordion-body {
     font-size: 0.9rem;
     padding: 20px;
   }
+
   .accordion-header {
     font-size: 1.5rem;
   }
+
   .h2-footer {
     font-size: 2rem;
   }
+
   footer {
     border-radius: 80px;
     font-size: 18px;
@@ -1005,32 +1046,38 @@ fieldset legend {
     flex-direction: column;
     align-items: center;
   }
+
   .redes-sociales {
     display: flex;
     flex-direction: row;
     gap: 7px;
     margin: 10px 0;
   }
+
   .logoredes {
     display: flex;
     flex-direction: row;
     width: 50px;
     height: auto;
   }
+
   footer a {
     margin: 0 10px;
     text-decoration: none;
     color: #533d43;
   }
+
   footer a:hover {
     color: #555;
   }
+
   footer div {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+
   /* Media Queries MOBILE PORTFOLIO (iPhone 3/4/4s y similares)*/
   #box {
     border-radius: 80px;
@@ -1043,12 +1090,14 @@ fieldset legend {
     flex-direction: column;
     align-items: center;
   }
+
   .logotipo {
     height: 70px;
     width: auto;
     padding-top: 5px;
     padding-bottom: 0px;
   }
+
   .barra-navegacion {
     font-size: 17px;
     font-family: Georgia, "Times New Roman", Times, serif;
@@ -1058,6 +1107,7 @@ fieldset legend {
     width: 90%;
     padding-top: 15px;
   }
+
   .barra-navegacion a {
     flex: 0 1 calc(50% - 10px);
     text-align: center;
@@ -1065,6 +1115,7 @@ fieldset legend {
     box-sizing: border-box;
     padding-top: 15px;
   }
+
   .crear-marca {
     background-color: #533d43;
     color: white;
@@ -1075,28 +1126,34 @@ fieldset legend {
     cursor: pointer;
     margin: 10px;
   }
+
   .portfolio {
     grid-template-columns: 1fr;
     gap: 10px;
     padding-top: 10px;
   }
+
   .cards-portfolio {
     padding: 20px;
     height: auto;
     margin: 10px;
   }
+
   .foto-portfolio {
     width: 100%;
     height: auto;
   }
+
   .p-portfolio {
     font-size: 0.9rem;
     padding-bottom: 20px;
     margin-bottom: 20px;
   }
+
   .h2-footer {
     font-size: 2rem;
   }
+
   footer {
     border-radius: 80px;
     font-size: 18px;
@@ -1110,32 +1167,38 @@ fieldset legend {
     flex-direction: column;
     align-items: center;
   }
+
   .redes-sociales {
     display: flex;
     flex-direction: row;
     gap: 7px;
     margin: 10px 0;
   }
+
   .logoredes {
     display: flex;
     flex-direction: row;
     width: 50px;
     height: auto;
   }
+
   footer a {
     margin: 0 10px;
     text-decoration: none;
     color: #533d43;
   }
+
   footer a:hover {
     color: #555;
   }
+
   footer div {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+
   /* Media Queries MOBILE SHOP (iPhone 3/4/4s y similares)*/
   #box {
     border-radius: 80px;
@@ -1148,12 +1211,14 @@ fieldset legend {
     flex-direction: column;
     align-items: center;
   }
+
   .logotipo {
     height: 70px;
     width: auto;
     padding-top: 5px;
     padding-bottom: 0px;
   }
+
   .barra-navegacion {
     font-size: 17px;
     font-family: Georgia, "Times New Roman", Times, serif;
@@ -1163,6 +1228,7 @@ fieldset legend {
     width: 90%;
     padding-top: 15px;
   }
+
   .barra-navegacion a {
     flex: 0 1 calc(50% - 10px);
     text-align: center;
@@ -1170,6 +1236,7 @@ fieldset legend {
     box-sizing: border-box;
     padding-top: 15px;
   }
+
   .crear-marca {
     background-color: #533d43;
     color: white;
@@ -1180,66 +1247,81 @@ fieldset legend {
     cursor: pointer;
     margin: 10px;
   }
+
   .baseline-shop {
     font-size: 0.9rem;
     margin-left: 3%;
     margin-right: 3%;
   }
+
   .banda-container {
     padding: 8px;
   }
+
   .banda-texto {
     font-size: 1rem;
   }
+
   .container-fluid {
     width: 95%;
     padding: 10px;
     border-radius: 15px;
   }
+
   .container-fluid h1 {
     font-size: 1.3rem;
     padding: 8px;
   }
+
   .card {
     width: 90%;
     margin: 3%;
     padding: 10px;
     border-radius: 15px;
   }
+
   .card-body {
     border-radius: 15px;
   }
+
   .container-fluid h3 {
     font-size: 0.9rem;
     margin: 5px 0;
   }
+
   .p-plantillas {
     font-size: 0.9rem;
     padding: 10px 8px;
   }
+
   .cards-shop {
     width: 90%;
     padding: 15px;
     margin: 15px auto;
   }
+
   .pack-full {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
+
   .gif-plantillas {
     width: 90%;
     height: auto;
     margin: 0 auto 15px auto;
   }
+
   .descripcion-pack {
     text-align: center;
     padding: 0 5px;
     font-size: 0.9rem;
   }
+
   .h2-footer {
     font-size: 2rem;
   }
+
   footer {
     border-radius: 80px;
     font-size: 18px;
@@ -1253,32 +1335,38 @@ fieldset legend {
     flex-direction: column;
     align-items: center;
   }
+
   .redes-sociales {
     display: flex;
     flex-direction: row;
     gap: 7px;
     margin: 10px 0;
   }
+
   .logoredes {
     display: flex;
     flex-direction: row;
     width: 50px;
     height: auto;
   }
+
   footer a {
     margin: 0 10px;
     text-decoration: none;
     color: #533d43;
   }
+
   footer a:hover {
     color: #555;
   }
+
   footer div {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+
   /* Media Queries MOBILE RECURSOS (iPhone 3/4/4s y similares)*/
   #box {
     border-radius: 80px;
@@ -1291,12 +1379,14 @@ fieldset legend {
     flex-direction: column;
     align-items: center;
   }
+
   .logotipo {
     height: 70px;
     width: auto;
     padding-top: 5px;
     padding-bottom: 0px;
   }
+
   .barra-navegacion {
     font-size: 17px;
     font-family: Georgia, "Times New Roman", Times, serif;
@@ -1306,6 +1396,7 @@ fieldset legend {
     width: 90%;
     padding-top: 15px;
   }
+
   .barra-navegacion a {
     flex: 0 1 calc(50% - 10px);
     text-align: center;
@@ -1313,6 +1404,7 @@ fieldset legend {
     box-sizing: border-box;
     padding-top: 15px;
   }
+
   .crear-marca {
     background-color: #533d43;
     color: white;
@@ -1323,42 +1415,51 @@ fieldset legend {
     cursor: pointer;
     margin: 10px;
   }
+
   .iconos3 {
     width: 100%;
     height: auto;
   }
+
   .tarjeta {
     padding: 10px;
     margin-bottom: 15px;
   }
+
   h1 {
     font-size: 2.4rem;
     text-align: center;
   }
+
   h3 {
     font-size: 1rem;
     margin-bottom: 20px;
   }
+
   .diccionario-grilla {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     padding: 5px;
   }
+
   .diccionario-grilla li {
     font-size: 0.9rem;
     padding: 8px;
     border-radius: 5px;
   }
+
   .baseline-dicc {
     font-size: 1.2rem;
     text-align: center;
   }
+
   .section-blog {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
   }
+
   .entrada {
     flex-direction: column;
     padding: 10px;
@@ -1366,22 +1467,27 @@ fieldset legend {
     width: 100%;
     max-width: 100%;
   }
+
   .imagen-entrada {
     width: 100%;
     height: auto;
     margin-right: 0;
     margin-bottom: 10px;
   }
+
   .contenido-texto {
     text-align: center;
   }
+
   .entrada h2 {
     font-size: 1.1rem;
     line-height: 1.3;
   }
+
   .h2-footer {
     font-size: 2rem;
   }
+
   footer {
     border-radius: 80px;
     font-size: 18px;
@@ -1395,32 +1501,38 @@ fieldset legend {
     flex-direction: column;
     align-items: center;
   }
+
   .redes-sociales {
     display: flex;
     flex-direction: row;
     gap: 7px;
     margin: 10px 0;
   }
+
   .logoredes {
     display: flex;
     flex-direction: row;
     width: 50px;
     height: auto;
   }
+
   footer a {
     margin: 0 10px;
     text-decoration: none;
     color: #533d43;
   }
+
   footer a:hover {
     color: #555;
   }
+
   footer div {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+
   /* Media Queries MOBILE CONTACTOS (iPhone 3/4/4s y similares)*/
   #box {
     border-radius: 80px;
@@ -1433,12 +1545,14 @@ fieldset legend {
     flex-direction: column;
     align-items: center;
   }
+
   .logotipo {
     height: 70px;
     width: auto;
     padding-top: 5px;
     padding-bottom: 0px;
   }
+
   .barra-navegacion {
     font-size: 17px;
     font-family: Georgia, "Times New Roman", Times, serif;
@@ -1448,6 +1562,7 @@ fieldset legend {
     width: 90%;
     padding-top: 15px;
   }
+
   .barra-navegacion a {
     flex: 0 1 calc(50% - 10px);
     text-align: center;
@@ -1455,6 +1570,7 @@ fieldset legend {
     box-sizing: border-box;
     padding-top: 15px;
   }
+
   .crear-marca {
     background-color: #533d43;
     color: white;
@@ -1465,40 +1581,50 @@ fieldset legend {
     cursor: pointer;
     margin: 10px;
   }
+
   .card-form {
     padding: 20px;
     margin-left: 5%;
     margin-right: 5%;
     max-width: 90%;
   }
+
   .v-contactos {
     width: 100%;
     height: auto;
   }
+
   #p-contacto {
     font-size: 15px;
     padding: 10px;
   }
+
   .form-label {
     font-size: 15px;
   }
+
   legend {
     font-size: 15px;
   }
+
   .form-check-input {
     width: 15px;
     height: 15px;
   }
+
   .form-check {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .form-check-label {
     font-size: 15px;
   }
+
   .h2-footer {
     font-size: 2rem;
   }
+
   footer {
     border-radius: 80px;
     font-size: 18px;
@@ -1512,26 +1638,31 @@ fieldset legend {
     flex-direction: column;
     align-items: center;
   }
+
   .redes-sociales {
     display: flex;
     flex-direction: row;
     gap: 7px;
     margin: 10px 0;
   }
+
   .logoredes {
     display: flex;
     flex-direction: row;
     width: 50px;
     height: auto;
   }
+
   footer a {
     margin: 0 10px;
     text-decoration: none;
     color: #533d43;
   }
+
   footer a:hover {
     color: #555;
   }
+
   footer div {
     display: flex;
     flex-direction: column;
@@ -1549,6 +1680,7 @@ fieldset legend {
     width: 90%;
     height: auto;
   }
+
   .barra-navegacion {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1556,83 +1688,102 @@ fieldset legend {
     margin: 0;
     padding: 0%;
   }
+
   .barra-navegacion a {
     font-size: 12px;
     padding: 0px;
     margin: 0px;
     text-align: center;
   }
+
   .logotipo {
     height: 40px;
   }
+
   .crear-marca {
     margin: 10px;
     padding: 10px;
     font-size: 12px;
   }
+
   .banner {
     width: 100%;
     height: auto;
     padding: 15px;
   }
+
   .h1 {
     font-size: 1.2rem;
     margin-bottom: 12px;
   }
+
   .banda-containerindex {
     width: 100%;
     padding: 0px;
   }
+
   .banda-textolinks {
     font-size: 1.1rem;
     text-align: center;
   }
+
   .banda-textolinks a {
     padding: 0px;
     flex: 1 1 calc(50% - 10px);
   }
+
   .parrafo-index {
     font-size: 14px;
     margin: 10px;
   }
+
   .card-index {
     padding: 20px;
     margin: 20px;
   }
+
   .marquee img {
     width: 80%;
     height: auto;
   }
+
   .h2-benef {
     font-size: 18px;
     padding: 0px;
   }
+
   .accordion-button {
     font-size: 18px;
     padding-left: 20%;
   }
+
   .card-escena {
     padding: 10px;
     margin-left: 10px;
   }
+
   .contenido-presentacion {
     padding: 10px;
     overflow: auto;
   }
+
   .foto-perfil {
     width: 180px;
     height: auto;
     margin: 10px;
     float: left;
   }
+
   #flor-perfil {
     font-size: 14px;
     margin-top: 10px;
     overflow: hidden;
   }
+
   .h2-footer {
     font-size: 1.8rem;
   }
+
   footer {
     border-radius: 50px;
     font-size: 1rem;
@@ -1642,17 +1793,21 @@ fieldset legend {
     justify-content: space-between;
     align-items: left;
   }
+
   .redes-sociales {
     gap: 10px;
   }
+
   .logoredes {
     width: 60px;
   }
+
   footer a {
     display: flex;
     flex-direction: column;
     margin-left: auto;
   }
+
   /* Media Queries TABLETS SERVICIOS (iPad Mini,Samsung Galaxy TabA,Amazon Fire HD y similares)*/
   #box {
     flex-direction: column;
@@ -1661,6 +1816,7 @@ fieldset legend {
     width: 90%;
     height: auto;
   }
+
   .barra-navegacion {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1668,29 +1824,34 @@ fieldset legend {
     margin: 0;
     padding: 0%;
   }
+
   .barra-navegacion a {
     font-size: 12px;
     padding: 0px;
     margin: 0px;
     text-align: center;
   }
+
   .logotipo {
     height: 40px;
   }
+
   .crear-marca {
     margin: 10px;
     padding: 10px;
     font-size: 12px;
   }
+
   .servicios {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 30px;
   }
+
   .cards-servicios {
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.5764705882);
+    background-color: #ffffff93;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.61);
     padding: 20px;
@@ -1698,21 +1859,25 @@ fieldset legend {
     height: auto;
     margin: 10px 0;
   }
+
   .imagenes-servicios {
     width: 100%;
     height: auto;
     border-radius: 8px;
     padding: 5px;
   }
+
   .p-card-serv {
     font-family: Georgia, "Times New Roman", Times, serif;
     text-align: center;
     margin: 15px 0;
     width: 90%;
   }
+
   .h2-footer {
     font-size: 1.8rem;
   }
+
   footer {
     border-radius: 50px;
     font-size: 1rem;
@@ -1722,17 +1887,21 @@ fieldset legend {
     justify-content: space-between;
     align-items: left;
   }
+
   .redes-sociales {
     gap: 10px;
   }
+
   .logoredes {
     width: 60px;
   }
+
   footer a {
     display: flex;
     flex-direction: column;
     margin-left: auto;
   }
+
   /* Media Queries TABLETS PORTFOLIO (iPad Mini,Samsung Galaxy TabA,Amazon Fire HD y similares)*/
   #box {
     flex-direction: column;
@@ -1741,6 +1910,7 @@ fieldset legend {
     width: 90%;
     height: auto;
   }
+
   .barra-navegacion {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1748,26 +1918,31 @@ fieldset legend {
     margin: 0;
     padding: 0%;
   }
+
   .barra-navegacion a {
     font-size: 12px;
     padding: 0px;
     margin: 0px;
     text-align: center;
   }
+
   .logotipo {
     height: 40px;
   }
+
   .crear-marca {
     margin: 10px;
     padding: 10px;
     font-size: 12px;
   }
+
   .portfolio {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 0;
   }
+
   .cards-portfolio {
     display: flex;
     flex-direction: column;
@@ -1780,20 +1955,24 @@ fieldset legend {
     height: auto;
     margin: 15px 0;
   }
+
   .foto-portfolio {
     width: 100%;
     height: auto;
     border-radius: 8px;
   }
+
   .p-portfolio {
     margin-top: 0;
     margin-bottom: 15px;
     padding-bottom: 10px;
     text-align: center;
   }
+
   .h2-footer {
     font-size: 1.8rem;
   }
+
   footer {
     border-radius: 50px;
     font-size: 1rem;
@@ -1803,17 +1982,21 @@ fieldset legend {
     justify-content: space-between;
     align-items: left;
   }
+
   .redes-sociales {
     gap: 10px;
   }
+
   .logoredes {
     width: 60px;
   }
+
   footer a {
     display: flex;
     flex-direction: column;
     margin-left: auto;
   }
+
   /* Media Queries TABLETS SHOP (iPad Mini,Samsung Galaxy TabA,Amazon Fire HD y similares)*/
   #box {
     flex-direction: column;
@@ -1822,6 +2005,7 @@ fieldset legend {
     width: 90%;
     height: auto;
   }
+
   .barra-navegacion {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1829,20 +2013,24 @@ fieldset legend {
     margin: 0;
     padding: 0%;
   }
+
   .barra-navegacion a {
     font-size: 12px;
     padding: 0px;
     margin: 0px;
     text-align: center;
   }
+
   .logotipo {
     height: 40px;
   }
+
   .crear-marca {
     margin: 10px;
     padding: 10px;
     font-size: 12px;
   }
+
   .baseline-shop {
     font-family: Georgia;
     font-size: 18px;
@@ -1850,20 +2038,23 @@ fieldset legend {
     margin-right: 5%;
     text-align: justify;
   }
+
   .banda-container {
     width: 100%;
     overflow: hidden;
-    background-color: rgba(83, 61, 67, 0.9607843137);
+    background-color: #533d43f5;
     padding: 10px;
   }
+
   .banda-texto {
     display: flex;
     white-space: nowrap;
     animation: textoScroll 10s linear infinite;
     font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 1.5rem;
-    color: rgb(211, 203, 203);
+    color: #d3cbcb;
   }
+
   @keyframes textoScroll {
     0% {
       transform: translateX(0%);
@@ -1876,45 +2067,53 @@ fieldset legend {
     font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 1.5rem;
   }
+
   .p-deltitulo {
     padding-left: 5%;
     padding-right: 5%;
     text-align: center;
   }
+
   .container-fluid {
     width: 90%;
     background-color: #edeae8;
     padding: 20px;
     border-radius: 40px;
   }
+
   .container-fluid h1 {
     color: #642749;
     text-align: center;
     padding: 10px;
     font-size: 1.8rem;
   }
+
   .card {
     margin: 2%;
     padding: 2%;
-    background-color: rgba(255, 236, 242, 0.8352941176);
+    background-color: #ffecf2d5;
     border-radius: 40px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
+
   .card-body {
     border-radius: 40px;
   }
+
   .container-fluid h3 {
     font-family: Georgia, "Times New Roman", Times, serif;
-    color: rgb(83, 61, 67);
+    color: #533d43;
     margin: 10px 0;
     padding: 0;
   }
+
   .p-plantillas {
     font-family: Georgia, "Times New Roman", Times, serif;
-    color: rgb(83, 61, 67);
+    color: #533d43;
     padding: 10px;
     text-align: center;
   }
+
   .cards-shop {
     display: flex;
     flex-direction: column;
@@ -1925,10 +2124,12 @@ fieldset legend {
     margin: 30px auto;
     max-width: 90%;
   }
+
   .cards-shop h1 {
     padding-top: 0;
     padding-bottom: 20px;
   }
+
   .pack-full {
     display: flex;
     flex-direction: column;
@@ -1938,20 +2139,24 @@ fieldset legend {
     margin-left: auto;
     margin-right: auto;
   }
+
   .gif-plantillas {
     width: 90%;
     height: auto;
     object-fit: cover;
     margin: 10px;
   }
+
   .descripcion-pack {
     flex-grow: 1;
     text-align: left;
     padding: 10px;
   }
+
   .h2-footer {
     font-size: 1.8rem;
   }
+
   footer {
     border-radius: 50px;
     font-size: 1rem;
@@ -1961,17 +2166,21 @@ fieldset legend {
     justify-content: space-between;
     align-items: left;
   }
+
   .redes-sociales {
     gap: 10px;
   }
+
   .logoredes {
     width: 60px;
   }
+
   footer a {
     display: flex;
     flex-direction: column;
     margin-left: auto;
   }
+
   /* Media Queries TABLETS RECURSOS (iPad Mini,Samsung Galaxy TabA,Amazon Fire HD y similares)*/
   #box {
     flex-direction: column;
@@ -1980,6 +2189,7 @@ fieldset legend {
     width: 90%;
     height: auto;
   }
+
   .barra-navegacion {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1987,24 +2197,29 @@ fieldset legend {
     margin: 0;
     padding: 0%;
   }
+
   .barra-navegacion a {
     font-size: 12px;
     padding: 0px;
     margin: 0px;
     text-align: center;
   }
+
   .logotipo {
     height: 40px;
   }
+
   .crear-marca {
     margin: 10px;
     padding: 10px;
     font-size: 12px;
   }
+
   .iconos3 {
     width: 100%;
     height: auto;
   }
+
   .tarjeta {
     background-color: #ffffff;
     padding: 15px;
@@ -2012,15 +2227,18 @@ fieldset legend {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
   }
+
   h1 {
     margin-top: 10px;
     font-size: 2rem;
   }
+
   h3 {
     margin-top: 10px;
     margin-bottom: 40px;
     font-size: 1.5rem;
   }
+
   .diccionario-grilla {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -2029,6 +2247,7 @@ fieldset legend {
     padding: 10px;
     margin: 20px 0;
   }
+
   .diccionario-grilla li {
     background-color: #F6F3F0;
     padding: 10px;
@@ -2037,31 +2256,38 @@ fieldset legend {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.308);
     transition: background-color 0.3s, transform 0.3s;
   }
+
   .diccionario-grilla li:hover {
     background-color: #eae3e0;
     transform: scale(1.05);
     cursor: pointer;
   }
+
   .enlace-servicios {
     color: #061e38;
     text-decoration: none;
   }
+
   .enlace-servicios:hover {
     text-decoration: underline;
   }
+
   .baseline-dicc {
     font-size: 30px;
   }
+
   /* Sección Blog */
   .titulo-blog {
     margin-top: 20px;
     margin-bottom: 10px;
     font-size: 1.8rem;
   }
+
   .section-blog {
     display: grid;
     gap: 20px;
   }
+
   .entrada {
     display: flex;
     align-items: flex-start;
@@ -2074,30 +2300,37 @@ fieldset legend {
     width: 100%;
     transition: background-color 0.3s, transform 0.3s;
   }
+
   .imagen-entrada {
     width: 50%;
     height: auto;
     margin-right: 15px;
   }
+
   .contenido-texto {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
+
   .entrada h2 {
     margin: 15px;
     line-height: 40px;
   }
+
   .entrada h2 a:hover {
     text-decoration: underline;
   }
+
   .entrada:hover {
     background-color: #EAE9E6;
     transform: translateY(-5px);
   }
+
   .h2-footer {
     font-size: 1.8rem;
   }
+
   footer {
     border-radius: 50px;
     font-size: 1rem;
@@ -2107,17 +2340,21 @@ fieldset legend {
     justify-content: space-between;
     align-items: left;
   }
+
   .redes-sociales {
     gap: 10px;
   }
+
   .logoredes {
     width: 60px;
   }
+
   footer a {
     display: flex;
     flex-direction: column;
     margin-left: auto;
   }
+
   /* Media Queries TABLETS CONTACTOS (iPad Mini,Samsung Galaxy TabA,Amazon Fire HD y similares)*/
   #box {
     flex-direction: column;
@@ -2126,6 +2363,7 @@ fieldset legend {
     width: 90%;
     height: auto;
   }
+
   .barra-navegacion {
     flex-direction: row;
     flex-wrap: wrap;
@@ -2133,50 +2371,61 @@ fieldset legend {
     margin: 0;
     padding: 0%;
   }
+
   .barra-navegacion a {
     font-size: 12px;
     padding: 0px;
     margin: 0px;
     text-align: center;
   }
+
   .logotipo {
     height: 40px;
   }
+
   .crear-marca {
     margin: 10px;
     padding: 10px;
     font-size: 12px;
   }
+
   .card-form {
     padding: 20px;
     margin-left: auto;
     margin-right: auto;
     max-width: 90%;
   }
+
   .v-contactos {
     width: 100%;
     height: auto;
   }
+
   #p-contacto {
     font-size: 16px;
     padding: 10px;
   }
+
   .form-label,
-  legend,
-  .form-check-label {
+legend,
+.form-check-label {
     font-size: 16px;
   }
+
   .form-check-input {
     width: 20px;
     height: 20px;
   }
+
   .form-check {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .h2-footer {
     font-size: 1.8rem;
   }
+
   footer {
     border-radius: 50px;
     font-size: 1rem;
@@ -2186,12 +2435,15 @@ fieldset legend {
     justify-content: space-between;
     align-items: left;
   }
+
   .redes-sociales {
     gap: 10px;
   }
+
   .logoredes {
     width: 60px;
   }
+
   footer a {
     display: flex;
     flex-direction: column;
@@ -2211,5 +2463,3 @@ fieldset legend {
     margin: 0 auto;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
