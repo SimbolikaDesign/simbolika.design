@@ -1497,6 +1497,12 @@ legend {
         margin: 10px;
     }
 
+
+    .iconos3 {
+        width: 100%;
+        height: auto;
+    }
+
     .tarjeta {
         padding: 10px;
         margin-bottom: 15px;
@@ -1749,40 +1755,829 @@ legend {
 }
 
 /* _________________________MEDIA QUERIES TABLETS_________________________ */
-@media (min-width: 600px) and (max-width: 1023px) {
+
+@media (min-width: 600px) and (max-width: 1024px) {
 
 
     /* Media Queries TABLETS INICIO (iPad Mini,Samsung Galaxy TabA,Amazon Fire HD y similares)*/
+
+    #box {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        width: 90%;
+        height: auto;
+    }
+
+    .barra-navegacion {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0;
+        padding: 0%;
+    }
+
+    .barra-navegacion a {
+        font-size: 12px;
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+    }
+
+    .logotipo {
+        height: 40px;
+    }
+
+    .crear-marca {
+        margin: 10px;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+
+    .banner {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .h1 {
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+    }
+
+    .banda-containerindex {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .banda-textolinks {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .banda-textolinks a {
+        padding: 0px;
+        flex: 1 1 calc(50% - 10px);
+    }
+
+    .parrafo-index {
+        font-size: 14px;
+        margin: 10px;
+    }
+
+    .card-index {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .marquee img {
+        width: 80%;
+        height: auto;
+    }
+
+    .h2-benef {
+        font-size: 18px;
+        padding: 0px;
+    }
+
+    .accordion-button {
+        font-size: 18px;
+        padding-left: 20%;
+    }
+
+    .card-escena {
+        padding: 10px;
+        margin-left: 10px;
+    }
+
+    .contenido-presentacion {
+        padding: 10px;
+        overflow: auto;
+    }
+
+    .foto-perfil {
+        width: 180px;
+        height: auto;
+        margin: 10px;
+        float: left;
+    }
+
+    #flor-perfil {
+        font-size: 14px;
+        margin-top: 10px;
+        overflow: hidden;
+    }
+
+    .h2-footer {
+        font-size: 1.8rem;
+    }
+
+    footer {
+        border-radius: 50px;
+        font-size: 1rem;
+        margin-top: 25px;
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: left;
+
+    }
+
+    .redes-sociales {
+        gap: 10px;
+    }
+
+    .logoredes {
+        width: 60px;
+    }
+
+    footer a {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+    }
+
+
     /* Media Queries TABLETS SERVICIOS (iPad Mini,Samsung Galaxy TabA,Amazon Fire HD y similares)*/
+
+    #box {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        width: 90%;
+        height: auto;
+    }
+
+    .barra-navegacion {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0;
+        padding: 0%;
+    }
+
+    .barra-navegacion a {
+        font-size: 12px;
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+    }
+
+    .logotipo {
+        height: 40px;
+    }
+
+    .crear-marca {
+        margin: 10px;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .servicios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+    }
+
+    .cards-servicios {
+        align-items: center;
+        background-color: #ffffff93;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.61);
+        padding: 20px;
+        max-width: 90%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .imagenes-servicios {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        padding: 5px;
+    }
+
+    .p-card-serv {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        margin: 15px 0;
+        width: 90%;
+    }
+
+    .h2-footer {
+        font-size: 1.8rem;
+    }
+
+    footer {
+        border-radius: 50px;
+        font-size: 1rem;
+        margin-top: 25px;
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: left;
+
+    }
+
+    .redes-sociales {
+        gap: 10px;
+    }
+
+    .logoredes {
+        width: 60px;
+    }
+
+    footer a {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+    }
+
     /* Media Queries TABLETS PORTFOLIO (iPad Mini,Samsung Galaxy TabA,Amazon Fire HD y similares)*/
+
+    #box {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        width: 90%;
+        height: auto;
+    }
+
+    .barra-navegacion {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0;
+        padding: 0%;
+    }
+
+    .barra-navegacion a {
+        font-size: 12px;
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+    }
+
+    .logotipo {
+        height: 40px;
+    }
+
+    .crear-marca {
+        margin: 10px;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .portfolio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0;
+    }
+
+    .cards-portfolio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.61);
+        padding: 20px;
+        max-width: 90%;
+        height: auto;
+        margin: 15px 0;
+    }
+
+    .foto-portfolio {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .p-portfolio {
+        margin-top: 0;
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .h2-footer {
+        font-size: 1.8rem;
+    }
+
+    footer {
+        border-radius: 50px;
+        font-size: 1rem;
+        margin-top: 25px;
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: left;
+
+    }
+
+    .redes-sociales {
+        gap: 10px;
+    }
+
+    .logoredes {
+        width: 60px;
+    }
+
+    footer a {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+    }
+
     /* Media Queries TABLETS SHOP (iPad Mini,Samsung Galaxy TabA,Amazon Fire HD y similares)*/
+
+    #box {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        width: 90%;
+        height: auto;
+    }
+
+    .barra-navegacion {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0;
+        padding: 0%;
+    }
+
+    .barra-navegacion a {
+        font-size: 12px;
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+    }
+
+    .logotipo {
+        height: 40px;
+    }
+
+    .crear-marca {
+        margin: 10px;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .baseline-shop {
+        font-family: Georgia;
+        font-size: 18px;
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: justify;
+    }
+
+    .banda-container {
+        width: 100%;
+        overflow: hidden;
+        background-color: #533d43f5;
+        padding: 10px;
+    }
+
+    .banda-texto {
+        display: flex;
+        white-space: nowrap;
+        animation: textoScroll 10s linear infinite;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 1.5rem;
+        color: rgb(211, 203, 203);
+    }
+
+    @keyframes textoScroll {
+        0% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    .h3-banda {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 1.5rem;
+    }
+
+    .p-deltitulo {
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: center;
+    }
+
+    .container-fluid {
+        width: 90%;
+        background-color: #edeae8;
+        padding: 20px;
+        border-radius: 40px;
+    }
+
+    .container-fluid h1 {
+        color: #642749;
+        text-align: center;
+        padding: 10px;
+        font-size: 1.8rem;
+    }
+
+    .card {
+        margin: 2%;
+        padding: 2%;
+        background-color: #ffecf2d5;
+        border-radius: 40px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-body {
+        border-radius: 40px;
+    }
+
+    .container-fluid h3 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(83, 61, 67);
+        margin: 10px 0;
+        padding: 0;
+    }
+
+    .p-plantillas {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(83, 61, 67);
+        padding: 10px;
+        text-align: center;
+    }
+
+    .cards-shop {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.247);
+        padding: 30px;
+        margin: 30px auto;
+        max-width: 90%;
+    }
+
+    .cards-shop h1 {
+        padding-top: 0;
+        padding-bottom: 20px;
+    }
+
+    .pack-full {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .gif-plantillas {
+        width: 90%;
+        height: auto;
+        object-fit: cover;
+        margin: 10px;
+    }
+
+    .descripcion-pack {
+        flex-grow: 1;
+        text-align: left;
+        padding: 10px;
+    }
+
+
+
+    .h2-footer {
+        font-size: 1.8rem;
+    }
+
+    footer {
+        border-radius: 50px;
+        font-size: 1rem;
+        margin-top: 25px;
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: left;
+
+    }
+
+    .redes-sociales {
+        gap: 10px;
+    }
+
+    .logoredes {
+        width: 60px;
+    }
+
+    footer a {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+    }
+
+
     /* Media Queries TABLETS RECURSOS (iPad Mini,Samsung Galaxy TabA,Amazon Fire HD y similares)*/
+
+    #box {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        width: 90%;
+        height: auto;
+    }
+
+    .barra-navegacion {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0;
+        padding: 0%;
+    }
+
+    .barra-navegacion a {
+        font-size: 12px;
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+    }
+
+    .logotipo {
+        height: 40px;
+    }
+
+    .crear-marca {
+        margin: 10px;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .iconos3 {
+        width: 100%;
+        height: auto;
+    }
+
+    .tarjeta {
+        background-color: #ffffff;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        margin-top: 10px;
+        font-size: 2rem;
+    }
+
+    h3 {
+        margin-top: 10px;
+        margin-bottom: 40px;
+        font-size: 1.5rem;
+    }
+
+
+    .diccionario-grilla {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        list-style-type: none;
+        gap: 15px;
+        padding: 10px;
+        margin: 20px 0;
+    }
+
+    .diccionario-grilla li {
+        background-color: #F6F3F0;
+        padding: 10px;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.308);
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .diccionario-grilla li:hover {
+        background-color: #eae3e0;
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+
+    .enlace-servicios {
+        color: #061e38;
+        text-decoration: none;
+    }
+
+    .enlace-servicios:hover {
+        text-decoration: underline;
+    }
+
+    .baseline-dicc {
+        font-size: 30px;
+    }
+
+    /* Sección Blog */
+    .titulo-blog {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 1.8rem;
+    }
+
+    .section-blog {
+        display: grid;
+        gap: 20px;
+    }
+
+    .entrada {
+        display: flex;
+        align-items: flex-start;
+        padding: 15px;
+        margin-bottom: 20px;
+        background-color: #F6F3F0;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        max-width: 100%;
+        width: 100%;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .imagen-entrada {
+        width: 50%;
+        height: auto;
+        margin-right: 15px;
+    }
+
+    .contenido-texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .entrada h2 {
+        margin: 15px;
+        line-height: 40px;
+    }
+
+    .entrada h2 a:hover {
+        text-decoration: underline;
+    }
+
+    .entrada:hover {
+        background-color: #EAE9E6;
+        transform: translateY(-5px);
+    }
+
+
+
+    .h2-footer {
+        font-size: 1.8rem;
+    }
+
+    footer {
+        border-radius: 50px;
+        font-size: 1rem;
+        margin-top: 25px;
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: left;
+
+    }
+
+    .redes-sociales {
+        gap: 10px;
+    }
+
+    .logoredes {
+        width: 60px;
+    }
+
+    footer a {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+    }
+
+
     /* Media Queries TABLETS CONTACTOS (iPad Mini,Samsung Galaxy TabA,Amazon Fire HD y similares)*/
 
+    #box {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        width: 90%;
+        height: auto;
+    }
+
+    .barra-navegacion {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0;
+        padding: 0%;
+    }
+
+    .barra-navegacion a {
+        font-size: 12px;
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+    }
+
+    .logotipo {
+        height: 40px;
+    }
+
+    .crear-marca {
+        margin: 10px;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .card-form {
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 90%;
+    }
+
+    .v-contactos {
+        width: 100%;
+        height: auto;
+    }
+
+    #p-contacto {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .form-label,
+    legend,
+    .form-check-label {
+        font-size: 16px;
+    }
+
+    .form-check-input {
+        width: 20px;
+        height: 20px;
+    }
+
+    .form-check {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+
+    .h2-footer {
+        font-size: 1.8rem;
+    }
+
+    footer {
+        border-radius: 50px;
+        font-size: 1rem;
+        margin-top: 25px;
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: left;
+
+    }
+
+    .redes-sociales {
+        gap: 10px;
+    }
+
+    .logoredes {
+        width: 60px;
+    }
+
+    footer a {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+    }
 }
 
-/* _________________________MEDIA QUERIES DESKTOP MEDIANOS_________________________ */
-@media (min-width: 1024px) and (max-width: 1440px) {
 
+/* _________________________MEDIA QUERIES DESKTOP GRANDES_________________________ */
 
-    /* Media Queries DESKTOP MEDIANOS INICIO (MacBook Air,Dell Inspiron 14,HP Pavilion 14 y similares)*/
-    /* Media Queries DESKTOP MEDIANOS SERVICIOS (MacBook Air,Dell Inspiron 14,HP Pavilion 14 y similares)*/
-    /* Media Queries DESKTOP MEDIANOS PORTFOLIO (MacBook Air,Dell Inspiron 14,HP Pavilion 14 y similares)*/
-    /* Media Queries DESKTOP MEDIANOS SHOP (MacBook Air,Dell Inspiron 14,HP Pavilion 14 y similares)*/
-    /* Media Queries DESKTOP MEDIANOS RECURSOS (MacBook Air,Dell Inspiron 14,HP Pavilion 14 y similares)*/
-    /* Media Queries DESKTOP MEDIANOS CONTACTOS (MacBook Air,Dell Inspiron 14,HP Pavilion 14 y similares)*/
-
-}
-
-/* _________________________MEDIA QUERIES GRANDES_________________________ */
 @media (min-width: 1440px) and (max-width: 1920px) {
 
+    /* Media Queries DESKTOP GRANDES (Asus ZenBook, MacBook Pro Retina,Dell XPS 15 y similares)*/
 
-    /* Media Queries DESKTOP GRANDES INICIO (Asus ZenBook, MacBook Pro Retina,Dell XPS 15 y similares)*/
-    /* Media Queries DESKTOP GRANDES SERVICIOS (Asus ZenBook, MacBook Pro Retina,Dell XPS 15 y similares)*/
-    /* Media Queries DESKTOP GRANDES PORTFOLIO (Asus ZenBook, MacBook Pro Retina,Dell XPS 15 y similares)*/
-    /* Media Queries DESKTOP GRANDES SHOP (Asus ZenBook, MacBook Pro Retina,Dell XPS 15 y similares)*/
-    /* Media Queries DESKTOP GRANDES RECURSOS (Asus ZenBook, MacBook Pro Retina,Dell XPS 15 y similares)*/
-    /* Media Queries DESKTOP GRANDES CONTACTOS (Asus ZenBook, MacBook Pro Retina,Dell XPS 15 y similares)*/
+    .contenedor-footer {
+        width: 70%;
+        height: auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
 
 }
