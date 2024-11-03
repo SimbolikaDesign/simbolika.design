@@ -58,7 +58,9 @@ h3 {
     padding-right: 15%;
     text-align: center;
 }
-
+.p-plantillas {
+    font-size: 25px;
+}
 .cards-shop {
     display: flex;
     flex-direction: column;
@@ -68,8 +70,6 @@ h3 {
     padding: 50px;
     margin: 50px auto;
     max-width: 80%;
-    justify-content: center;
-    align-items: center;
 
     h1 {
         font-size: 55px;
@@ -79,6 +79,27 @@ h3 {
 
     h4 {
         font-size: 30px;
+    }
+}
+.descripcion-pack {
+    h4 {
+      text-align: left;
+    }
+  
+    ul {
+      padding-left: 20px !important;
+      list-style-type: disc !important;
+      margin: 0;
+  
+      li {
+        text-align: left !important; // Forzar alineación a la izquierda
+        margin-bottom: 8px;
+      }
+    }
+  
+    p {
+      text-align: left !important;
+      margin-bottom: 10px;
     }
 }
 

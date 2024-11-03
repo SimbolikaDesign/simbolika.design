@@ -1,0 +1,114 @@
+@charset "UTF-8";
+/* Cards Plantillas */
+h1 {
+  font-family: "Relationship Of Mélodrame", sans-serif;
+  color: #533d43;
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+h3.baseline-shop {
+  text-align: justify;
+  font-family: Georgia;
+  font-size: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+h3.h3-banda {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* banda for designers*/
+.banda-container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-color: #533d43f5;
+  padding: 10px;
+}
+.banda-container .banda-texto {
+  display: flex;
+  white-space: nowrap;
+  animation: textoScroll 10s linear infinite;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2rem;
+  color: #d3cbcb;
+  padding: 10px;
+}
+.banda-container .banda-texto p {
+  margin: 0;
+}
+
+@keyframes textoScroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.p-deltitulo {
+  padding-left: 15%;
+  padding-right: 15%;
+  text-align: center;
+}
+
+.p-plantillas {
+  font-size: 25px;
+}
+
+.cards-shop {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.247);
+  padding: 50px;
+  margin: 50px auto;
+  max-width: 80%;
+}
+.cards-shop h1 {
+  font-size: 55px;
+  padding-top: 0;
+  padding-bottom: 25px;
+}
+.cards-shop h4 {
+  font-size: 30px;
+}
+
+.descripcion-pack h4 {
+  text-align: left;
+}
+.descripcion-pack ul {
+  padding-left: 20px !important;
+  list-style-type: disc !important;
+  margin: 0;
+}
+.descripcion-pack ul li {
+  text-align: left !important;
+  margin-bottom: 8px;
+}
+.descripcion-pack p {
+  text-align: left !important;
+  margin-bottom: 10px;
+}
+
+.pack-full {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pack-full .gif-plantillas {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+.pack-full .descripcion-pack {
+  flex-grow: 1;
+  text-align: left;
+}
