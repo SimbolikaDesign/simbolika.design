@@ -1,0 +1,53 @@
+/* ______________________ PAGINA RECURSOS ______________________ */
+
+.tarjeta {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+  
+    .h1 {
+      margin-top: 10px;
+    }
+      .h2-benef {
+      margin-top: 10px;
+    }
+    .baseline-dicc {
+      font-size: 30px;
+    }
+  
+    .diccionario-grilla {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(150px, 1fr));
+      list-style-type: none;
+      gap: 15px;
+      padding: 10px;
+      margin: 20px 0;
+  
+      li {
+        background-color: #F6F3F0;
+        padding: 10px;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.308);
+        transition: background-color 0.3s, transform 0.3s;
+  
+        &:hover {
+          background-color: #eae3e0;
+          transform: scale(1.05);
+          cursor: pointer;
+        }
+      }
+    }
+  
+    .enlace-servicios {
+      color: #061e38;
+      text-decoration: none;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  

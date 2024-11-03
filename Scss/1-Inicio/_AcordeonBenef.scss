@@ -1,0 +1,32 @@
+/* Acordeon benef */
+
+.card-index {
+    h2.h2-benef {
+        font-size: 58px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .accordion-item {
+        h2.accordion-header {
+            .accordion-button {
+                padding-left: 40px;
+                font-size: 40px;
+
+                &:hover {
+                    background-color: #f0f0f0;
+                    color: #3333336b;
+                }
+            }
+
+            .accordion-collapse {
+                .accordion-body {
+                    font-size: 35px;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    padding: 0 30px 0 50px;
+                    text-align: start;
+                }
+            }
+        }
+    }
+}

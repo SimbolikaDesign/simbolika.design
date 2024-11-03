@@ -1,0 +1,44 @@
+/* Acordeon de preguntas frecuentes */
+
+.card-faq {
+    border-radius: 80px;
+    width: 80%;
+    margin: 10%;
+
+    h1.h1-benef {
+        text-align: center;
+    }
+
+    .accordion {
+        width: 100%;
+
+        .accordion-item {
+            width: 100%;
+            border-radius: 80px;
+
+            .accordion-header {
+                font-size: 40px;
+
+                .accordion-button {
+                    padding-left: 40px;
+                    font-size: 30px;
+
+                    &:hover {
+                        background-color: #f0f0f0;
+                        color: #3333336b;
+                    }
+                }
+            }
+
+            .accordion-collapse {
+                .accordion-body {
+                    font-size: 1.1rem;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    padding-left: 50px;
+                    padding-right: 30px;
+                    text-align: start;
+                }
+            }
+        }
+    }
+}

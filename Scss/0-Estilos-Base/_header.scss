@@ -1,0 +1,30 @@
+/* header de todas las pag*/
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    #box {
+        border-radius: 80px;
+        background-color: #F6F3F0;
+        height: auto;
+        width: 100%;
+        margin: 0 auto;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .logotipo {
+            height: 70px;
+            width: auto;
+            margin-right: 20px; 
+        }
+        .barra-navegacion {
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            display: flex;
+            gap: 30px;
+            padding-top: 15px;
+            margin-bottom: 25px;
+        }
+    }
+}

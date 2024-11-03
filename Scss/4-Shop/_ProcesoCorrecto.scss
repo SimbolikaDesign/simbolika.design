@@ -1,0 +1,49 @@
+/* seccion proceso correcto */
+
+section {
+    .container-fluid {
+        width: 80%;
+        background-color: #edeae8;
+        padding: 20px;
+        border-radius: 80px;
+
+        h1 {
+            color: #642749;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .row {
+            .col-md-6 {
+                .card {
+                    margin: 2%;
+                    padding: 2%;
+                    background-color: #ffecf2d5;
+                    border-radius: 80px;
+                    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+                    .card-body {
+                        border-radius: 80px;
+
+                        h3 {
+                            font-family: Georgia, 'Times New Roman', Times, serif;
+                            color: rgb(83, 61, 67);
+                            margin: 10px 0 0 0;
+                            padding: 0;
+                        }
+
+                        p {
+                            font-family: Georgia, 'Times New Roman', Times, serif;
+                            color: rgb(83, 61, 67);
+                            padding: 15px 15px;
+                            padding-bottom: 0;
+                            text-align: center;
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,48 @@
+/* Footer de todas las páginas */
+
+.h2-footer {
+    font-size: 2rem;
+}
+
+footer {
+    border-radius: 80px;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #F6F3F0;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .redes-sociales {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 15px;
+
+        .logoredes {
+            width: 30px;
+            height: auto;
+        }
+    }
+
+    a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #000;
+
+        &:hover {
+            color: #555;
+        }
+    }
+
+    div,
+    a {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

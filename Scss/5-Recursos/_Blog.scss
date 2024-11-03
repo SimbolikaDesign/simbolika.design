@@ -1,0 +1,46 @@
+/* Sección Blog */
+
+  .section-blog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  
+    .entrada {
+      display: flex;
+      align-items: flex-start;
+      padding: 15px;
+      margin-bottom: 20px;
+      background-color: #F6F3F0;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      max-width: 600px;
+      width: 100%;
+      transition: background-color 0.3s, transform 0.3s;
+  
+      &:hover {
+        background-color: #EAE9E6;
+        transform: translateY(-5px);
+      }
+  
+      .imagen-entrada {
+        width: 250px;
+        height: auto;
+        margin-right: 15px;
+      }
+  
+      .contenido-texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+  
+      h2 {
+        margin: 0 0 10px 0;
+        line-height: 40px;
+  
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }

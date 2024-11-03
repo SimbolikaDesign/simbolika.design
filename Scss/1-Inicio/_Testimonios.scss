@@ -1,0 +1,30 @@
+/* Slider infinito Testimonios */
+
+section {
+    .marquee {
+        width: 100%;
+        display: flex;
+        overflow: hidden;
+        white-space: nowrap;
+        align-items: center;
+
+        img {
+            height: auto;
+            width: 400px;
+            margin-right: 10px;
+            animation: scroll 10s linear infinite;
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-80%);
+    }
+}

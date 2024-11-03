@@ -1,0 +1,29 @@
+// reglas base
+@import './0-Estilos-Base/base';
+@import './0-Estilos-Base/header';
+@import './0-Estilos-Base/footer';
+
+// PAGINA DE INICIO
+@import './1-Inicio/Intro';
+@import './1-Inicio/Testimonios';
+@import './1-Inicio/AcordeonBenef';
+@import './1-Inicio/BioEscena';
+
+// PAGINA SERVICIOS
+@import './2-Servicios/CardsServ';
+@import './2-Servicios/AcordeonFAQ';
+
+// PAGINA PORTFOLIO
+@import './3-Portfolio/CardsPortfolio';
+
+// PAGINA DE SHOP
+@import './4-Shop/CardsShop';
+@import './4-Shop/ProcesoCorrecto';
+
+// PAGINA RECURSOS
+@import './5-Recursos/Diccionario';
+@import './5-Recursos/Blog';
+@import './5-Recursos/EbookG';
+
+// PAGINA CONTACTOS
+@import './6-Contacto/Form';

@@ -1,0 +1,731 @@
+@charset "UTF-8";
+/*Estilos Generales de todas las paginas */
+body {
+  background-color: #e8edeb;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Estilos de texto */
+@font-face {
+  font-family: "Relationsip Of Mélodrame";
+  src: url("Fonts/relationship-of-melodrame.ttf") format("truetype");
+}
+h1,
+h2,
+h3,
+li {
+  text-align: center;
+}
+
+h1 {
+  font-family: "Relationship Of Mélodrame", sans-serif;
+  color: #533d43;
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: "Relationship Of Mélodrame", sans-serif;
+  color: #674c53;
+  text-decoration: wavy;
+}
+
+h3 {
+  font-family: "Relationship Of Mélodrame", sans-serif;
+  color: #674c53;
+  font-size: 20px;
+}
+
+h4 {
+  font-family: "Relationship Of Mélodrame", sans-serif;
+  color: #674c53;
+  font-size: 20px;
+}
+
+p {
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: left;
+  margin: 10px 0;
+}
+
+ul ol {
+  padding-left: 0;
+  text-align: left;
+  margin-left: 20px;
+}
+
+/* Estilos de botones */
+a {
+  text-decoration: none;
+  color: #533d43;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.crear-marca {
+  background-color: #533d43;
+  color: white;
+  border-radius: 30px;
+  padding: 10px;
+  font-size: 17px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  cursor: pointer;
+  margin: 10px;
+}
+.crear-marca:hover {
+  background-color: #674c53;
+}
+
+.descubrir-servicios {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* Estilo general de las cards de todas las paginas */
+.plantilla-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.247);
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 80px;
+  margin: 50px 0;
+  margin-left: 70px;
+  max-width: 1000px;
+}
+
+/* header de todas las pag*/
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+header #box {
+  border-radius: 80px;
+  background-color: #F6F3F0;
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header #box .logotipo {
+  height: 70px;
+  width: auto;
+  margin-right: 20px;
+}
+header #box .barra-navegacion {
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: flex;
+  gap: 30px;
+  padding-top: 15px;
+  margin-bottom: 25px;
+}
+
+/* Footer de todas las páginas */
+.h2-footer {
+  font-size: 2rem;
+}
+
+footer {
+  border-radius: 80px;
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #F6F3F0;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+footer .redes-sociales {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  gap: 15px;
+}
+footer .redes-sociales .logoredes {
+  width: 30px;
+  height: auto;
+}
+footer a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #000;
+}
+footer a:hover {
+  color: #555;
+}
+footer div,
+footer a {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/*banner, h1, Banda CTA, Parrafo Psico-Branding*/
+.banner {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 20px 0;
+}
+
+.banda-containerindex {
+  width: 100%;
+  overflow: hidden;
+  background-color: rgba(83, 61, 67, 0.9607843137);
+  padding: 10px;
+}
+.banda-containerindex .banda-textolinks {
+  display: flex;
+  white-space: nowrap;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2rem;
+  color: rgb(211, 203, 203);
+}
+.banda-containerindex .banda-textolinks a {
+  color: rgb(211, 203, 203);
+  cursor: pointer;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.card-index {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 80px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.247);
+  padding: 40px;
+  margin: 50px;
+  max-width: 100%;
+}
+.card-index h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+.card-index .centered-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  align-items: center;
+}
+.card-index .parrafo-index {
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 0 20px;
+}
+
+/* Slider infinito Testimonios */
+section .marquee {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  align-items: center;
+}
+section .marquee img {
+  height: auto;
+  width: 400px;
+  margin-right: 10px;
+  animation: scroll 10s linear infinite;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-80%);
+  }
+}
+/* Acordeon benef */
+.card-index h2.h2-benef {
+  font-size: 58px;
+  margin: 0;
+  padding: 0;
+}
+.card-index .accordion-item h2.accordion-header .accordion-button {
+  padding-left: 40px;
+  font-size: 40px;
+}
+.card-index .accordion-item h2.accordion-header .accordion-button:hover {
+  background-color: #f0f0f0;
+  color: rgba(51, 51, 51, 0.4196078431);
+}
+.card-index .accordion-item h2.accordion-header .accordion-collapse .accordion-body {
+  font-size: 35px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 0 30px 0 50px;
+  text-align: start;
+}
+
+/* Bio detrás de escena */
+.card-escena {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(231, 137, 255, 0.1843137255);
+  border-radius: 80px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.61);
+  padding: 30px;
+  margin: 50px 0;
+  margin-left: 160px;
+  max-width: 1000px;
+}
+.card-escena h2.derecha1 {
+  text-align: right;
+  padding-top: 40px;
+  padding-right: 60px;
+}
+.card-escena h3.derecha3 {
+  text-align: right;
+  padding-right: 60px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.card-escena .contenido-presentacion {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.card-escena .contenido-presentacion .foto-perfil {
+  width: 300px;
+  height: 700px;
+  border-radius: 10px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+.card-escena .contenido-presentacion #flor-perfil {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 0.9rem;
+  margin-right: 40px;
+}
+.card-escena .presentacion {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2.h2-benef {
+  text-align: center;
+}
+
+a.crear-marca {
+  display: inline-block;
+  background-color: #533d43;
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+a.crear-marca:hover {
+  background-color: #674c53;
+}
+
+/* h1 y Cards de servicios */
+h1 {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.servicios {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  padding-top: 50px;
+}
+.servicios .cards-servicios {
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5764705882);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.61);
+  padding: 30px;
+  max-width: 100%;
+  height: 650px;
+  margin: 15px;
+}
+.servicios .cards-servicios h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+}
+.servicios .cards-servicios .imagenes-servicios {
+  width: 90%;
+  height: 60%;
+  border-radius: 8px;
+  padding: 10px 10px;
+}
+.servicios .cards-servicios .p-card-serv {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  margin-left: 25px;
+  width: 90%;
+}
+
+/* Acordeon de preguntas frecuentes */
+.card-faq {
+  border-radius: 80px;
+  width: 80%;
+  margin: 10%;
+}
+.card-faq h1.h1-benef {
+  text-align: center;
+}
+.card-faq .accordion {
+  width: 100%;
+}
+.card-faq .accordion .accordion-item {
+  width: 100%;
+  border-radius: 80px;
+}
+.card-faq .accordion .accordion-item .accordion-header {
+  font-size: 40px;
+}
+.card-faq .accordion .accordion-item .accordion-header .accordion-button {
+  padding-left: 40px;
+  font-size: 30px;
+}
+.card-faq .accordion .accordion-item .accordion-header .accordion-button:hover {
+  background-color: #f0f0f0;
+  color: rgba(51, 51, 51, 0.4196078431);
+}
+.card-faq .accordion .accordion-item .accordion-collapse .accordion-body {
+  font-size: 1.1rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding-left: 50px;
+  padding-right: 30px;
+  text-align: start;
+}
+
+/* PAGINA PORTFOLIO */
+/* Cards Portfolio */
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding-top: 0;
+}
+.portfolio .cards-portfolio {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.61);
+  padding: 35px;
+  max-width: 100%;
+  height: 600px;
+  margin: 15px;
+}
+.portfolio .cards-portfolio .foto-portfolio {
+  width: 100%;
+  height: 400px;
+  border-radius: 8px;
+}
+.portfolio .cards-portfolio .p-portfolio {
+  margin-top: 0;
+  margin-bottom: 35px;
+  padding-bottom: 50px;
+}
+
+/* Cards Plantillas */
+h1 {
+  font-family: "Relationship Of Mélodrame", sans-serif;
+  color: #533d43;
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+h3.baseline-shop {
+  text-align: justify;
+  font-family: Georgia;
+  font-size: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+h3.h3-banda {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* banda for designers*/
+.banda-container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-color: rgba(83, 61, 67, 0.9607843137);
+  padding: 10px;
+}
+.banda-container .banda-texto {
+  display: flex;
+  white-space: nowrap;
+  animation: textoScroll 10s linear infinite;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2rem;
+  color: rgb(211, 203, 203);
+  padding: 10px;
+}
+.banda-container .banda-texto p {
+  margin: 0;
+}
+
+@keyframes textoScroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.p-deltitulo {
+  padding-left: 15%;
+  padding-right: 15%;
+  text-align: center;
+}
+
+.cards-shop {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.247);
+  padding: 50px;
+  margin: 50px auto;
+  max-width: 80%;
+  justify-content: center;
+  align-items: center;
+}
+.cards-shop h1 {
+  font-size: 55px;
+  padding-top: 0;
+  padding-bottom: 25px;
+}
+.cards-shop h4 {
+  font-size: 30px;
+}
+
+.pack-full {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pack-full .gif-plantillas {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+.pack-full .descripcion-pack {
+  flex-grow: 1;
+  text-align: left;
+}
+
+/* seccion proceso correcto */
+section .container-fluid {
+  width: 80%;
+  background-color: #edeae8;
+  padding: 20px;
+  border-radius: 80px;
+}
+section .container-fluid h1 {
+  color: #642749;
+  text-align: center;
+  padding: 10px;
+}
+section .container-fluid .row .col-md-6 .card {
+  margin: 2%;
+  padding: 2%;
+  background-color: rgba(255, 236, 242, 0.8352941176);
+  border-radius: 80px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+section .container-fluid .row .col-md-6 .card .card-body {
+  border-radius: 80px;
+}
+section .container-fluid .row .col-md-6 .card .card-body h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(83, 61, 67);
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+section .container-fluid .row .col-md-6 .card .card-body p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(83, 61, 67);
+  padding: 15px 15px;
+  padding-bottom: 0;
+  text-align: center;
+  justify-content: center;
+}
+
+/* ______________________ PAGINA RECURSOS ______________________ */
+.tarjeta {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+.tarjeta .h1 {
+  margin-top: 10px;
+}
+.tarjeta .h2-benef {
+  margin-top: 10px;
+}
+.tarjeta .baseline-dicc {
+  font-size: 30px;
+}
+.tarjeta .diccionario-grilla {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(150px, 1fr));
+  list-style-type: none;
+  gap: 15px;
+  padding: 10px;
+  margin: 20px 0;
+}
+.tarjeta .diccionario-grilla li {
+  background-color: #F6F3F0;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.308);
+  transition: background-color 0.3s, transform 0.3s;
+}
+.tarjeta .diccionario-grilla li:hover {
+  background-color: #eae3e0;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.tarjeta .enlace-servicios {
+  color: #061e38;
+  text-decoration: none;
+}
+.tarjeta .enlace-servicios:hover {
+  text-decoration: underline;
+}
+
+/* Sección Blog */
+.section-blog {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+.section-blog .entrada {
+  display: flex;
+  align-items: flex-start;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #F6F3F0;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  width: 100%;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.section-blog .entrada:hover {
+  background-color: #EAE9E6;
+  transform: translateY(-5px);
+}
+.section-blog .entrada .imagen-entrada {
+  width: 250px;
+  height: auto;
+  margin-right: 15px;
+}
+.section-blog .entrada .contenido-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section-blog .entrada h2 {
+  margin: 0 0 10px 0;
+  line-height: 40px;
+}
+.section-blog .entrada h2 a:hover {
+  text-decoration: underline;
+}
+
+/*Sección Ebook Gratis*/
+/* Formulario de Contacto */
+.card-form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.5019607843);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  padding: 50px;
+  margin-top: 3%;
+  margin-left: 15%;
+  margin-right: 15%;
+  max-width: 80%;
+}
+.card-form .formulario-simbolika .formulario .mb-3 .form-label {
+  text-align: left;
+  display: block;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 25px;
+}
+.card-form .formulario-simbolika .formulario .mb-3 .form-control {
+  width: 100%;
+}
+.card-form .formulario-simbolika .formulario #p-contacto {
+  text-align: center;
+}
+
+.v-contactos {
+  width: 1270px;
+  height: auto;
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+}
+.form-check .form-check-input {
+  margin-right: 10px;
+}
+.form-check .form-check-label {
+  margin: 0;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
+fieldset legend {
+  text-align: left;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 25px;
+}
+
+.p-plantillas {
+  text-align: center;
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=style.css.map */
