@@ -507,6 +507,10 @@ h3.h3-banda {
   text-align: center;
 }
 
+.p-plantillas {
+  font-size: 25px;
+}
+
 .cards-shop {
   display: flex;
   flex-direction: column;
@@ -516,8 +520,6 @@ h3.h3-banda {
   padding: 50px;
   margin: 50px auto;
   max-width: 80%;
-  justify-content: center;
-  align-items: center;
 }
 .cards-shop h1 {
   font-size: 55px;
@@ -526,6 +528,23 @@ h3.h3-banda {
 }
 .cards-shop h4 {
   font-size: 30px;
+}
+
+.descripcion-pack h4 {
+  text-align: left;
+}
+.descripcion-pack ul {
+  padding-left: 20px !important;
+  list-style-type: disc !important;
+  margin: 0;
+}
+.descripcion-pack ul li {
+  text-align: left !important;
+  margin-bottom: 8px;
+}
+.descripcion-pack p {
+  text-align: left !important;
+  margin-bottom: 10px;
 }
 
 .pack-full {
@@ -674,6 +693,41 @@ section .container-fluid .row .col-md-6 .card .card-body p {
 /*Sección Ebook Gratis*/
 
 
+/* PAGINA DICCIONARIO */
+.baseline-dicc {
+  font-size: 25px;
+  color: #533d43;
+  line-height: 1.6;
+}
+
+.list-group {
+  margin: 20px 0;
+}
+.list-group .list-group-item {
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+.list-group .list-group-item:hover {
+  background-color: #f9f9f98f;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.534);
+}
+
+h5 {
+  font-weight: bold;
+  color: #533d43;
+  text-align: left;
+}
+
+.mb-1 {
+  text-align: left;
+  margin-top: 5px;
+  color: #533d43;
+}
 
 /* Formulario de Contacto */
 .card-form {
@@ -727,8 +781,8 @@ fieldset legend {
 }
 
 .p-plantillas {
-  text-align: center;
-  font-size: 14px;
+  text-align: left;
+  font-size: 25px;
 }
 
 /* _________________________MEDIA QUERIES MOBILE_________________________ */
