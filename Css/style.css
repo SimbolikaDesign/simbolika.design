@@ -751,8 +751,10 @@ h5 {
 .card-form .formulario-simbolika .formulario .mb-3 .form-control {
   width: 100%;
 }
-.card-form .formulario-simbolika .formulario #p-contacto {
-  text-align: center;
+#p-contacto {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .v-contactos {
@@ -784,6 +786,29 @@ fieldset legend {
   text-align: left;
   font-size: 25px;
 }
+/*PAGINA SOBRE MI*/
+
+.typed-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid rgba(0, 0, 0, 0.438); /* es el cursor, no el borde */
+  animation: typing 4s steps(30, end) forwards, blink-caret 0.75s step-end 3;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 30%; }
+}
+
+@keyframes blink-caret {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: rgba(0, 0, 0, 0.438); }
+}
+
+
+
+
 
 /* _________________________MEDIA QUERIES MOBILE_________________________ */
 @media (min-width: 320px) and (max-width: 599px) {
