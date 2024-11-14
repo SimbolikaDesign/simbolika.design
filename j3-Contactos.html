@@ -24,8 +24,8 @@
 
 
 <body>
-  <!-- Header -->
-  <header>
+  <!-- Header para desktop -->
+  <header class="header-desktop">
     <div id="box">
       <img src="Fotos y Videos/logo simb bg.png" alt="Logotipo de Simbolika" class="logotipo">
 
@@ -38,140 +38,169 @@
         <a href="j5-sobre-mi.html">Sobre mi</a>
         <a href="j3-Contactos.html">Contacto</a>
       </nav>
-      <a href="j3-Contactos.html"><button class="crear-marca">Quiero crear mi marca</button></a>
+      <a href="j3-Contactos.html" class="crear-marca">Quiero crear mi marca</a>
     </div>
   </header>
+  <!-- Header para mobile-->
+  <header class="header-mobile">
+    <nav class="navbar navbar-expand-lg"
+      style="background-color: #f6f3f0; padding-left: 10px; padding-right: 10px; border-radius:10%;">
+      <a class="navbar-brand" href="#">
+        <img src="Fotos y Videos/logo simb bg.png" alt="Logo de Simbolika Design"
+          style="height: 70px; justify-content: right;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="index.html">Inicio</a>
+          <a class="nav-link" href="j1-Nuestros-Servicios.html">Servicios</a>
+          <a class="nav-link" href="j1-Portfolio.html">Portfolio</a>
+          <a class="nav-link" href="j1-Shop.html">Shop</a>
+          <a class="nav-link" href="j2-Recursos.html">Recursos</a>
+          <a class="nav-link" href="j5-sobre-mi.html">Sobre mi</a>
+          <a class="nav-link" href="j3-Contactos.html">Contacto</a>
+        </div>
+      </div>
+    </nav>
+  </header>
   <!--Fin header-->
-  <br>
-  <h1>Nos inspiran las historias. <em>Cuéntanos todo sobre tu proyecto</em></h1>
-  <p id="p-contacto">Responde las siguientes preguntas después de haber visitado la página de servicios. Recibirás una
-    respuesta en menos de 48 horas.</p>
-  <br>
-  <img class="v-contactos" src="Fotos y Videos/gift contacto.gif" alt="Video sobre formulario">
+  <main>
+    <h1>Nos inspiran las historias. <em>Cuéntanos todo sobre tu proyecto</em></h1>
+    <p id="p-contacto">Responde las siguientes preguntas después de haber visitado la página de servicios. Recibirás una
+      respuesta en menos de 48 horas.</p>
+    <br>
+    <img class="v-contactos" src="Fotos y Videos/gift contacto.gif" alt="Video sobre formulario">
 
-  <!-- FORMULARIO-->
+    <!-- FORMULARIO-->
 
-  <section class="card-form">
-    <div class="formulario-simbolika">
-      <form class="formulario" action="https://formspree.io/f/xqakbdez" method="POST">
+    <section class="card-form">
+      <div class="formulario-simbolika">
+        <form class="formulario" action="https://formspree.io/f/xqakbdez" method="POST">
 
-        <!-- nombre completo -->
-        <div class="mb-3">
-          <label for="nombre" class="form-label">Tu Nombre Completo:</label>
-          <input type="text" class="form-control" id="nombre" name="nombre" required>
-        </div>
-        <!-- pais -->
-        <div class="mb-3">
-          <label for="pais" class="form-label">País de donde escribes:</label>
-          <input type="text" class="form-control" id="pais" name="pais" required>
-        </div>
-        <!-- email -->
-        <div class="mb-3">
-          <label for="email" class="form-label">Email:</label>
-          <input type="email" class="form-control" id="email" name="email" required>
-        </div>
-        <!-- interés -->
-        <fieldset class="mb-3">
-          <legend class="text-start">Estoy interesado en:</legend>
-          <div class="form-check">
-            <input type="radio" class="form-check-input" id="branding" name="interesado en" value="branding" required>
-            <label class="form-check-label" for="branding">Branding</label>
+          <!-- nombre completo -->
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Tu Nombre Completo:</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" required>
           </div>
-          <div class="form-check">
-            <input type="radio" class="form-check-input" id="social" name="interesado en" value="social media">
-            <label class="form-check-label" for="social">Social Media</label>
+          <!-- pais -->
+          <div class="mb-3">
+            <label for="pais" class="form-label">País de donde escribes:</label>
+            <input type="text" class="form-control" id="pais" name="pais" required>
           </div>
-          <div class="form-check">
-            <input type="radio" class="form-check-input" id="packaging" name="interesado en" value="papeleria y packaging">
-            <label class="form-check-label" for="packaging">Packaging y Papelería</label>
+          <!-- email -->
+          <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
           </div>
-          <div class="form-check">
-            <input type="radio" class="form-check-input" id="web" name="interesado en" value="desarrollo web">
-            <label class="form-check-label" for="web">Diseño y Desarrollo Web</label>
+          <!-- interés -->
+          <fieldset class="mb-3">
+            <legend class="text-start">Estoy interesado en:</legend>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" id="branding" name="interesado en" value="branding" required>
+              <label class="form-check-label" for="branding">Branding</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" id="social" name="interesado en" value="social media">
+              <label class="form-check-label" for="social">Social Media</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" id="packaging" name="interesado en"
+                value="papeleria y packaging">
+              <label class="form-check-label" for="packaging">Packaging y Papelería</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" id="web" name="interesado en" value="desarrollo web">
+              <label class="form-check-label" for="web">Diseño y Desarrollo Web</label>
+            </div>
+          </fieldset>
+          <!-- naming -->
+          <div class="mb-3">
+            <label for="marca" class="form-label">Nombre de tu marca o proyecto:</label>
+            <input type="text" class="form-control" id="marca" name="nombre de marca/proyecto" required>
           </div>
-        </fieldset>
-        <!-- naming -->
-        <div class="mb-3">
-          <label for="marca" class="form-label">Nombre de tu marca o proyecto:</label>
-          <input type="text" class="form-control" id="marca" name="nombre de marca/proyecto" required>
-        </div>
-        <!-- redes -->
-        <div class="mb-3">
-          <label for="pagina" class="form-label">Instagram o Página web que ya tengas:</label>
-          <input type="text" class="form-control" id="pagina" name="Insta o web que ya tiene" required>
-        </div>
-        <!-- objetivos -->
-        <div class="mb-3">
-          <label for="mensaje" class="form-label">De qué se trata el proyecto y que deseas lograr? Cuál es nuestro
-            objetivo?:</label>
-          <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
-        </div>
+          <!-- redes -->
+          <div class="mb-3">
+            <label for="pagina" class="form-label">Instagram o Página web que ya tengas:</label>
+            <input type="text" class="form-control" id="pagina" name="Insta o web que ya tiene" required>
+          </div>
+          <!-- objetivos -->
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">De qué se trata el proyecto y que deseas lograr? Cuál es nuestro
+              objetivo?:</label>
+            <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+          </div>
 
-        <!-- Presupuesto -->
-        <fieldset class="mb-3">
-          <legend class="text-start">Cuál es tu presupuesto?</legend>
-          <div class="form-check">
-            <input type="radio" class="form-check-input" id="presupuesto1" name="presupuesto" value="100-200" required>
-            <label class="form-check-label" for="presupuesto1">Entre 100 y 200 USD</label>
-          </div>
-          <div class="form-check">
-            <input type="radio" class="form-check-input" id="presupuesto2" name="presupuesto" value="200-400">
-            <label class="form-check-label" for="presupuesto2">Entre 200 y 400 USD</label>
-          </div>
-          <div class="form-check">
-            <input type="radio" class="form-check-input" id="presupuesto3" name="presupuesto" value="400-700">
-            <label class="form-check-label" for="presupuesto3">Entre 400 y 700 USD</label>
-          </div>
-          <div class="form-check">
-            <input type="radio" class="form-check-input" id="presupuesto4" name="presupuesto" value="700-1500">
-            <label class="form-check-label" for="presupuesto4">Entre 700 y 1500 USD</label>
-          </div>
-        </fieldset>
+          <!-- Presupuesto -->
+          <fieldset class="mb-3">
+            <legend class="text-start">Cuál es tu presupuesto?</legend>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" id="presupuesto1" name="presupuesto" value="100-200"
+                required>
+              <label class="form-check-label" for="presupuesto1">Entre 100 y 200 USD</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" id="presupuesto2" name="presupuesto" value="200-400">
+              <label class="form-check-label" for="presupuesto2">Entre 200 y 400 USD</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" id="presupuesto3" name="presupuesto" value="400-700">
+              <label class="form-check-label" for="presupuesto3">Entre 400 y 700 USD</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" id="presupuesto4" name="presupuesto" value="700-1500">
+              <label class="form-check-label" for="presupuesto4">Entre 700 y 1500 USD</label>
+            </div>
+          </fieldset>
 
-        <!-- Cómo me conociste -->
-        <fieldset class="mb-3">
-          <legend class="text-start">Cómo me conociste?</legend>
-          <div class="form-check">
-            <input type="radio" class="form-check-input" id="instagram" name="Te conoci por" value="instagram" required>
-            <label class="form-check-label" for="instagram">Instagram</label>
-          </div>
-          <div class="form-check">
-            <input type="radio" class="form-check-input" id="pinterest" name="Te conoci por" value="pinterest">
-            <label class="form-check-label" for="pinterest">Pinterest</label>
-          </div>
-          <div class="form-check">
-            <input type="radio" class="form-check-input" id="google" name="Te conoci por" value="google">
-            <label class="form-check-label" for="google">Google</label>
-          </div>
-          <div class="form-check">
-            <input type="radio" class="form-check-input" id="amigo" name="Te conoci por" value="amigo">
-            <label class="form-check-label" for="amigo">Recomendación de un amigo</label>
-          </div>
-        </fieldset>
+          <!-- Cómo me conociste -->
+          <fieldset class="mb-3">
+            <legend class="text-start">Cómo me conociste?</legend>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" id="instagram" name="Te conoci por" value="instagram"
+                required>
+              <label class="form-check-label" for="instagram">Instagram</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" id="pinterest" name="Te conoci por" value="pinterest">
+              <label class="form-check-label" for="pinterest">Pinterest</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" id="google" name="Te conoci por" value="google">
+              <label class="form-check-label" for="google">Google</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" id="amigo" name="Te conoci por" value="amigo">
+              <label class="form-check-label" for="amigo">Recomendación de un amigo</label>
+            </div>
+          </fieldset>
 
-        <!-- enviar info - boton -->
-        <br>
-        <p class="p-plantillas">Al enviar este formulario, acepta que almacenemos sus datos para gestionar su consulta.
-          Ante cualquier duda
-          consulte nuestra <em><a href="j4-Terminos-y-politicas.html">Política de privacidad</a></em> o contáctenos a
-          través de simbolikadesign@gmail.com. Gracias.</p>
-        <br>
+          <!-- enviar info - boton -->
+          <br>
+          <p class="p-plantillas">Al enviar este formulario, acepta que almacenemos sus datos para gestionar su
+            consulta.
+            Ante cualquier duda
+            consulte nuestra <em><a href="j4-Terminos-y-politicas.html">Política de privacidad</a></em> o contáctenos a
+            través de simbolikadesign@gmail.com. Gracias.</p>
+          <br>
 
-        <!-- Botón -->
-        <div>
-          <button type="submit" class="crear-marca">Enviar Info</button>
-        </div>
-        <br>
-      </form>
-    </div>
-  </section>
-
-
-  <!-- video resumen proyectos, logos, mockups, etc-->
-  <h1><em> ~ Creamos marcas de profundo impacto ~</em></h1>
-  <img src="Fotos y Videos/gif plantillas.gif" alt="Video inspiracional y resumen de proyectos">
+          <!-- Botón -->
+          <div>
+            <button type="submit" class="crear-marca">Enviar Info</button>
+          </div>
+          <br>
+        </form>
+      </div>
+    </section>
 
 
+    <!-- video resumen proyectos, logos, mockups, etc-->
+    <h1><em> ~ Creamos marcas de profundo impacto ~</em></h1>
+    <img src="Fotos y Videos/gif plantillas.gif" alt="Video inspiracional y resumen de proyectos">
+
+  </main>
   <!-- pie-->
 
   <footer class="contenedor-footer" style="width: 80%; align-items: center; justify-content: center; margin-left: 10%;">

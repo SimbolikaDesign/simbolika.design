@@ -25,8 +25,8 @@
 
 
 <body>
-  <!-- Header -->
-  <header>
+  <!-- Header para desktop -->
+  <header class="header-desktop">
     <div id="box">
       <img src="Fotos y Videos/logo simb bg.png" alt="Logotipo de Simbolika" class="logotipo">
 
@@ -39,20 +39,45 @@
         <a href="j5-sobre-mi.html">Sobre mi</a>
         <a href="j3-Contactos.html">Contacto</a>
       </nav>
-      <a href="j3-Contactos.html"><button class="crear-marca">Quiero crear mi marca</button></a>
+      <a href="j3-Contactos.html" class="crear-marca">Quiero crear mi marca</a>
     </div>
   </header>
+  <!-- Header para mobile-->
+  <header class="header-mobile">
+    <nav class="navbar navbar-expand-lg"
+      style="background-color: #f6f3f0; padding-left: 10px; padding-right: 10px; border-radius:10%;">
+      <a class="navbar-brand" href="#">
+        <img src="Fotos y Videos/logo simb bg.png" alt="Logo de Simbolika Design"
+          style="height: 70px; justify-content: right;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="index.html">Inicio</a>
+          <a class="nav-link" href="j1-Nuestros-Servicios.html">Servicios</a>
+          <a class="nav-link" href="j1-Portfolio.html">Portfolio</a>
+          <a class="nav-link" href="j1-Shop.html">Shop</a>
+          <a class="nav-link" href="j2-Recursos.html">Recursos</a>
+          <a class="nav-link" href="j5-sobre-mi.html">Sobre mi</a>
+          <a class="nav-link" href="j3-Contactos.html">Contacto</a>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-  <br>
   <h1>/Recursos</h1>
 
   <img src="Fotos y Videos/recursos 3 iconos.png" alt="3 iconos de recursos" class="iconos3">
 
   <!-- Sección Diccionario -->
-<section class="tarjeta">
-  <h2 class="h2-benef">Diccionario Gráfico</h2>
-  <h2 class="baseline-dicc">Para que sepas de qué se habla cuando se mencionan algunos términos específicos de diseño.</h2>
-  <ul class="diccionario-grilla">
+  <section class="tarjeta">
+    <h2 class="h2-benef">Diccionario Gráfico</h2>
+    <h2 class="baseline-dicc">Para que sepas de qué se habla cuando se mencionan algunos términos específicos de diseño.
+    </h2>
+    <ul class="diccionario-grilla">
       <li><a href="j2-Rec-diccionario.html">AI / Illustrator</a></li>
       <li><a href="j2-Rec-diccionario.html">Brandboard</a></li>
       <li><a href="j2-Rec-diccionario.html">Brief</a></li>
@@ -77,10 +102,11 @@
       <li><a href="j2-Rec-diccionario.html">Tipografía</a></li>
       <li><a href="j2-Rec-diccionario.html">Valor de marca</a></li>
       <li><a href="j2-Rec-diccionario.html">Vector</a></li>
-  </ul>
+    </ul>
 
-  <h2 class="baseline-dicc">Ahora que ya sabés lo que significa cada palabra, te invitamos a que veas lo que incluye cada uno de <a href="j1-Nuestros-Servicios.html" class="enlace-servicios">Nuestros Servicios</a>.</h2>
-</section>
+    <h2 class="baseline-dicc">Ahora que ya sabés lo que significa cada palabra, te invitamos a que veas lo que incluye
+      cada uno de <a href="j1-Nuestros-Servicios.html" class="enlace-servicios">Nuestros Servicios</a>.</h2>
+  </section>
 
 
   <!-- Sección Blog -->
@@ -118,9 +144,8 @@
     <p>Obtén acceso a recursos valiosos para potenciar tu proyecto.</p>
     <button class="button">Descargar Ebook</button>
   </section>
-
-
 </body>
+</main>
 
 <!-- pie-->
 

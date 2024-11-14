@@ -24,8 +24,8 @@
 
 
 <body>
-  <!-- Header -->
-  <header>
+  <!-- Header para desktop -->
+  <header class="header-desktop">
     <div id="box">
       <img src="Fotos y Videos/logo simb bg.png" alt="Logotipo de Simbolika" class="logotipo">
 
@@ -38,61 +38,85 @@
         <a href="j5-sobre-mi.html">Sobre mi</a>
         <a href="j3-Contactos.html">Contacto</a>
       </nav>
-      <a href="j3-Contactos.html"><button class="crear-marca">Quiero crear mi marca</button></a>
+      <a href="j3-Contactos.html" class="crear-marca">Quiero crear mi marca</a>
     </div>
   </header>
+  <!-- Header para mobile-->
+  <header class="header-mobile">
+    <nav class="navbar navbar-expand-lg"
+      style="background-color: #f6f3f0; padding-left: 10px; padding-right: 10px; border-radius:10%;">
+      <a class="navbar-brand" href="#">
+        <img src="Fotos y Videos/logo simb bg.png" alt="Logo de Simbolika Design"
+          style="height: 70px; justify-content: right;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="index.html">Inicio</a>
+          <a class="nav-link" href="j1-Nuestros-Servicios.html">Servicios</a>
+          <a class="nav-link" href="j1-Portfolio.html">Portfolio</a>
+          <a class="nav-link" href="j1-Shop.html">Shop</a>
+          <a class="nav-link" href="j2-Recursos.html">Recursos</a>
+          <a class="nav-link" href="j5-sobre-mi.html">Sobre mi</a>
+          <a class="nav-link" href="j3-Contactos.html">Contacto</a>
+        </div>
+      </div>
+    </nav>
+  </header>
   <!--Fin header-->
-  
-  <div class="typed-text">
-    <h1><span>Acerca de mi..</span></h1>
-  </div>
-  <!-- Bio detrás de escena -->
-  <section class="card-escena">
-    <h2 class="derecha1">Detrás de escena</h2>
-    <h3 class="derecha3">"Si estas oculta.. como sabré quién eres..?" - Cerati</h3>
-    <div class="contenido-presentacion">
-      <img class="foto-perfil" src="Fotos y Videos/flor (1).jpg" alt="foto de la diseñadora">
-
-      <p id="flor-perfil">✍🏻Para quienes no conocen la historia, mi nombre es Flor, soy Diseñadora UX/UI Avanzada y
-        a la par "casi" Lic en Psicología (send vibes de tesis!). Claramente, Simbólika nace de mi amor por el
-        Psicoanálisis y el Diseño.
-        <b>Gracias a esas disciplinas tengo la costumbre de desglosar las palabras hasta su raíz...</b> Me fascina
-        el mundo de las letras, los garabatos, los dibujos..!
-        <b>¿Y qué son, sino símbolos...? Símbolos inconscientes, que nos atraviesan a todos por igual,</b>
-        (incluso desde antes de nacer).
-        <br><br>
-        ❇️El símbolo es la imagen mental que creamos para poder representar emociones, pensamientos, ideas,
-        deseos...
-        Y como tal, imaginarás que existen tantos símbolos como personas en el mundo.
-        <br>❤️Existen símbolos aceptados universalmente como el corazón que solemos enlazar a la idea de Amor, o el
-        color rojo
-        a la Pasión.🔥
-        <br>✨<b>Pero también existen otros, muy personales, muy propios, que son capaces de exteriorizar nuestro
-          mundo interior,
-          nuestra esencia.</b>
-        <br>Y por eso creé Simbolika Design. ✨
-        <br><br>
-        🔱Simbólika existe para ayudarte a encontrar el corazón de tu marca, y desde allí trabajar para graficar
-        esos símbolos
-        tan personales de tu emprendimiento que una vez definidos, lo dotarán de lo más auténtico y verdadero de su
-        esencia.
-        <br><br>
-        <b>No es solo un logo, una paleta de colores, una tipografía ideal, se trata de cómo impacta tu marca en el
-          inconsciente
-          de las personas..</b>
-        <br>Es innegable el éxito de una marca bien trabajada, que sabe quién es y transmite correctamente desde el
-        corazón. 💖
-        <br><br>
-        <em><b>- Te invito a trabajar juntos para descubrir cuál es tu símbolo, tu identidad visual y crear una
-            marca
-            magnética y de éxito!</b>
-          <br>Hasta pronto, Flor.🌸
-        </em>
-      </p>
+  <main>
+    <div class="typed-text">
+      <h1><span>Acerca de mi..</span></h1>
     </div>
+    <!-- Bio detrás de escena -->
+    <section class="card-escena">
+      <h2 class="derecha1">Detrás de escena</h2>
+      <h3 class="derecha3">"Si estas oculta.. como sabré quién eres..?" - Cerati</h3>
+      <div class="contenido-presentacion">
+        <img class="foto-perfil" src="Fotos y Videos/flor (1).jpg" alt="foto de la diseñadora">
+
+        <p id="flor-perfil">✍🏻Para quienes no conocen la historia, mi nombre es Flor, soy Diseñadora UX/UI Avanzada y
+          a la par "casi" Lic en Psicología (send vibes de tesis!). Claramente, Simbólika nace de mi amor por el
+          Psicoanálisis y el Diseño.
+          <b>Gracias a esas disciplinas tengo la costumbre de desglosar las palabras hasta su raíz...</b> Me fascina
+          el mundo de las letras, los garabatos, los dibujos..!
+          <b>¿Y qué son, sino símbolos...? Símbolos inconscientes, que nos atraviesan a todos por igual,</b>
+          (incluso desde antes de nacer).
+          <br><br>
+          ❇️El símbolo es la imagen mental que creamos para poder representar emociones, pensamientos, ideas,
+          deseos...
+          Y como tal, imaginarás que existen tantos símbolos como personas en el mundo.
+          <br>❤️Existen símbolos aceptados universalmente como el corazón que solemos enlazar a la idea de Amor, o el
+          color rojo
+          a la Pasión.🔥
+          <br>✨<b>Pero también existen otros, muy personales, muy propios, que son capaces de exteriorizar nuestro
+            mundo interior,
+            nuestra esencia.</b>
+          <br>Y por eso creé Simbolika Design. ✨
+          <br><br>
+          🔱Simbólika existe para ayudarte a encontrar el corazón de tu marca, y desde allí trabajar para graficar
+          esos símbolos
+          tan personales de tu emprendimiento que una vez definidos, lo dotarán de lo más auténtico y verdadero de su
+          esencia.
+          <br><br>
+          <b>No es solo un logo, una paleta de colores, una tipografía ideal, se trata de cómo impacta tu marca en el
+            inconsciente
+            de las personas..</b>
+          <br>Es innegable el éxito de una marca bien trabajada, que sabe quién es y transmite correctamente desde el
+          corazón. 💖
+          <br><br>
+          <em><b>- Te invito a trabajar juntos para descubrir cuál es tu símbolo, tu identidad visual y crear una
+              marca
+              magnética y de éxito!</b>
+            <br>Hasta pronto, Flor.🌸
+          </em>
+        </p>
+      </div>
     </section>
-<br>
-<br>
+  </main>
 
   <!-- pie-->
 
@@ -125,7 +149,7 @@
         <a style="color: dimgray;" href="j4-Terminos-y-politicas.html">Política de Cookies</a>
       </div>
     </div>
-</footer>
+  </footer>
 
 </body>
 

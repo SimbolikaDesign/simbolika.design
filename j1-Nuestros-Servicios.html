@@ -24,8 +24,8 @@
 </head>
 
 <body>
-    <!-- Header -->
-    <header>
+    <!-- Header para desktop -->
+    <header class="header-desktop">
         <div id="box">
             <img src="Fotos y Videos/logo simb bg.png" alt="Logotipo de Simbolika" class="logotipo">
 
@@ -41,240 +41,306 @@
             <a href="j3-Contactos.html" class="crear-marca">Quiero crear mi marca</a>
         </div>
     </header>
-    
-    <br>
-    <h1>Nuestros servicios/<em>Para impactar fuerte</em></h1>
+    <!-- Header para mobile-->
+    <header class="header-mobile">
+        <nav class="navbar navbar-expand-lg"
+            style="background-color: #f6f3f0; padding-left: 10px; padding-right: 10px; border-radius:10%;">
+            <a class="navbar-brand" href="#">
+                <img src="Fotos y Videos/logo simb bg.png" alt="Logo de Simbolika Design"
+                    style="height: 70px; justify-content: right;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                    <a class="nav-link" href="j1-Nuestros-Servicios.html">Servicios</a>
+                    <a class="nav-link" href="j1-Portfolio.html">Portfolio</a>
+                    <a class="nav-link" href="j1-Shop.html">Shop</a>
+                    <a class="nav-link" href="j2-Recursos.html">Recursos</a>
+                    <a class="nav-link" href="j5-sobre-mi.html">Sobre mi</a>
+                    <a class="nav-link" href="j3-Contactos.html">Contacto</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Nuestros servicios/<em>Para impactar fuerte</em></h1>
 
-    <!-- Sección Servicios -->
-    <section class="servicios">
-        <div class="cards-servicios">
-            <h2>Branding</h2>
-            <img class="imagenes-servicios" src="Fotos y Videos/blog 2.jpg" alt="Imagen branding" class="servicio-img">
-            <p class="p-card-serv">Las personas no conectan solo con un logo. Por eso en Simbolika trabajamos marcas  completas, creamos identidades que brillan y hacen que la gente se enamore de lo que ofreces. Este servicio es nuestra especialidad.  Tu éxito está a solo un buen branding de distancia.</p>
+        <!-- Sección Servicios -->
+        <section class="servicios">
+            <div class="cards-servicios">
+                <h2>Branding</h2>
+                <img class="imagenes-servicios" src="Fotos y Videos/blog 2.jpg" alt="Imagen branding"
+                    class="servicio-img">
+                <p class="p-card-serv">Las personas no conectan solo con un logo. Por eso en Simbolika trabajamos marcas
+                    completas, creamos identidades que brillan y hacen que la gente se enamore de lo que ofreces. Este
+                    servicio es nuestra especialidad. Tu éxito está a solo un buen branding de distancia.</p>
+            </div>
+
+            <div class="cards-servicios">
+                <h2>Social Media</h2>
+                <img class="imagenes-servicios" src="Fotos y Videos/socialm.webp" alt="Imagen Social Media"
+                    class="servicio-img">
+                <p class="p-card-serv">Mejoramos tu presencia en Redes. Las redes sociales son tu megáfono en el mundo
+                    digital. Es donde puedes conectar, interactuar y construir una comunidad alrededor de tu marca. Con
+                    el poder del Social Media puedes transformar a tus seguidores en clientes leales. </p>
+            </div>
+
+            <div class="cards-servicios">
+                <h2>Diseño de Papelería</h2>
+                <img class="imagenes-servicios" src="Fotos y Videos/pypape.png" alt="Imagen Papelería"
+                    class="servicio-img">
+                <p class="p-card-serv"> Hacemos que tu marca brille en papel como en la vida real. La papelería es la
+                    cara de tu marca en el mundo offline. Es tu oportunidad para impactar inconscientemente y dejar una
+                    impresión duradera. Una papelería bien diseñada transmite profesionalismo. Tus clientes dirán "wow"
+                    desde el primer momento.</p>
+            </div>
+
+            <div class="cards-servicios">
+                <h2>Diseño y Desarrollo Web</h2>
+                <img class="imagenes-servicios" src="Fotos y Videos/dydweb.webp" alt="Imagen Diseño y Desarrollo Web"
+                    class="servicio-img">
+                <p class="p-card-serv">Los usuarios de internet navegan por decenas de webs al día, por lo que tener
+                    presencia online con tu propia página ya no es una opción, es una necesidad. Diseñamos y
+                    desarrollamos tu página web a medida. Ya sea que busques un landing page, una web sencilla o un
+                    e-commerce.. ¡No dejes que tu marca se quede atrás!</p>
+            </div>
+        </section>
+
+
+        <!-- Sección FAQ acordeón -->
+
+        <section class="card-faq">
+            <h1 class="h1-benef">FAQ - Preguntas Frecuentes</h1>
+            <br>
+            <div class="accordion" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            01 / ¿Se puede diseñar solo el logo de mi marca?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            No, porque tu marca es más que un logo. Un logo capta la atención, pero una marca capta el
+                            corazón y la lealtad del cliente. En Simbolika desarrollamos branding completo que incluye:
+                            identidad conceptual e identidad visual. No trabajamos solo con logos porque no es
+                            suficiente
+                            para construir una marca poderosa que impacte y persuada a tu público.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            02 / Tengo una idea del logo que quiero, ¿Se puede trabajar con eso?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            Sí, nos va a servir como inspiración, pero fundamentalmente vamos a crear un logo que va a
+                            depender del análisis del rubro, cómo te quieras posicionar y a quién te quieras dirigir.
+                            Hay
+                            que tener en cuenta muchas cosas técnicas para que toda la identidad tenga coherencia y sus
+                            elementos sean funcionales a la marca.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            03 / ¿Se puede pagar mi proyecto en cuotas?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            Sí, re sí y super SI! Dependiendo del servicio que contrates, contamos con varias instancias
+                            de
+                            pago. No somos ajenos a la realidad de los emprendedores, y sabemos que contratar un
+                            servicio de
+                            diseño requiere de una inversión costosa al inicio, pero que será recuperado y amortizado en
+                            las
+                            ganancias que tendrá tu marca, y por eso siempre estaremos dispuestos a darle posibilidades
+                            de
+                            pago a quienes quieran trabajar con nosotros.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFour" aria-expanded="false"
+                            aria-controls="flush-collapseFour">
+                            04 / ¿Se puede trabajar en el Packaging y Redes Sociales sin una identidad visual definida?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            Para realizar cualquier tipo de diseño es elemental contar con paleta de colores, logo y
+                            tipografías. Por eso, si tu marca no tiene esos elementos definidos, primero debemos
+                            trabajar
+                            sobre eso.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFive" aria-expanded="false"
+                            aria-controls="flush-collapseFive">
+                            05 / ¿Hacen contenido y manejo de redes sociales?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            No, solo hacemos los diseños que necesites acordes a tu branding para que tú los publiques,
+                            y
+                            también te ofrecemos nuestro ebook gratis sobre "365 ideas para publicar en redes sociales".
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                            06 / ¿Se encargan de impresión y producto final?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseSix" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            No, está en planes, pero por el momento solo realizamos el diseño de las piezas gráficas. Lo
+                            que
+                            sí solemos brindar como "extra" es el asesoramiento para lograr un mejor resultado en cuanto
+                            a
+                            producto final o impresión. Además, y siempre que nos sea posible, entregamos los archivos
+                            preparados según los requerimientos de la imprenta sin costo extra.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseSeven" aria-expanded="false"
+                            aria-controls="flush-collapseSeven">
+                            07 / ¿Por qué debería yo gestionar mi branding?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseSeven" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            Deberías gestionar tu branding por dos motivos. El primero, es <strong>porque quieres vender
+                                más
+                                y hacerlo mejor.</strong> El branding mejora la visibilidad, construye confianza y
+                            fomenta
+                            la lealtad de tus clientes para que compren una y otra vez, permitiendo que tus productos y
+                            servicios se destaquen. Esto resulta en un aumento de ventas y en una relación más sólida
+                            con
+                            los clientes. Y el segundo motivo, es <strong>porque quieres una marca que trascienda.
+                                Aspiras a
+                                que tu marca deje huella,</strong> no solo en el mercado, sino en la cultura y la vida
+                            de
+                            las personas.
+                            De hecho es un fenomeno cultural. Necesitamos marcas que no existan solo para vender hoy,
+                            sino
+                            para ser recordadas y valoradas en el tiempo.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseEight" aria-expanded="false"
+                            aria-controls="flush-collapseEight">
+                            08 / ¿De quién son los derechos del material producido por Simbolika en el desarrollo de
+                            cualquiera de sus proyectos?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseEight" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            El proyecto, la marca y el producto/servicio del cliente, son del cliente. Esto implica dos
+                            cosas: una, que el cliente es quien debe ayudarnos en el proceso e informarnos debidamente
+                            al
+                            respecto, de modo que nosotros podamos hacer nuestra mejor labor, al máximo de nuestras
+                            capacidades y conocimientos. Y dos, que los derechos de propiedad intelectual y comercial de
+                            los
+                            proyectos, las ideas, las marcas y los productos o servicios del cliente, son del cliente.
+                            Asimismo, la responsabilidad legal al respecto de ellos es, también del cliente.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseNine" aria-expanded="false"
+                            aria-controls="flush-collapseNine">
+                            09 / ¿Cuánto tiempo lleva completar un proceso de branding?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseNine" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            El tiempo necesario para completar un proceso de branding puede variar según la complejidad
+                            y
+                            los requisitos específicos del proyecto. En Simbolika, trabajamos en estrecha colaboración
+                            contigo para entender tus necesidades y las de tu marca, y así poder establecer plazos
+                            realistas. Algunos proyectos pueden completarse en unas pocas semanas, mientras que otros
+                            más
+                            grandes y complejos pueden llevar más tiempo. Lo importante es mantener una comunicación
+                            fluida
+                            para cumplir con los plazos y ofrecerte resultados de alta calidad en el tiempo estipulado.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Botón de crear marca -->
+        <div>
+            <a href="j3-Contactos.html" class="crear-marca">Crear o Rediseñar mi marca </a>
         </div>
-
-        <div class="cards-servicios">
-            <h2>Social Media</h2>
-            <img class="imagenes-servicios" src="Fotos y Videos/socialm.webp" alt="Imagen Social Media"
-                class="servicio-img">
-            <p class="p-card-serv">Mejoramos tu presencia en Redes. Las redes sociales son tu megáfono en el mundo digital. Es donde puedes conectar, interactuar y construir una comunidad alrededor de tu marca. Con el poder del Social Media puedes transformar a tus seguidores en clientes leales. </p>
-        </div>
-
-        <div class="cards-servicios">
-            <h2>Diseño de Papelería</h2>
-            <img class="imagenes-servicios" src="Fotos y Videos/pypape.png" alt="Imagen Papelería"
-                class="servicio-img">
-            <p class="p-card-serv"> Hacemos que tu marca brille en papel como en la vida real. La papelería es la cara de tu marca en el mundo offline. Es tu oportunidad para impactar inconscientemente y dejar una impresión duradera. Una papelería bien diseñada transmite profesionalismo. Tus clientes dirán "wow" desde el primer momento.</p>
-        </div>
-
-        <div class="cards-servicios">
-            <h2>Diseño y Desarrollo Web</h2>
-            <img class="imagenes-servicios" src="Fotos y Videos/dydweb.webp" alt="Imagen Diseño y Desarrollo Web"
-                class="servicio-img">
-            <p class="p-card-serv">Los usuarios de internet navegan por decenas de webs al día, por lo que tener presencia online con tu propia página ya no es una opción, es una necesidad. Diseñamos y desarrollamos tu página web a medida. Ya sea que busques un landing page, una web sencilla o un e-commerce.. ¡No dejes que tu marca se quede atrás!</p>
-        </div>
-    </section>
-
-
-    <!-- Sección FAQ acordeón -->
-
-    <section class="card-faq">
-        <h1 class="h1-benef">FAQ - Preguntas Frecuentes</h1>
-        <br>
-        <div class="accordion" id="accordionFlushExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        01 / ¿Se puede diseñar solo el logo de mi marca?
-                    </button>
-                </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        No, porque tu marca es más que un logo. Un logo capta la atención, pero una marca capta el
-                        corazón y la lealtad del cliente. En Simbolika desarrollamos branding completo que incluye:
-                        identidad conceptual e identidad visual. No trabajamos solo con logos porque no es suficiente
-                        para construir una marca poderosa que impacte y persuada a tu público.
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        02 / Tengo una idea del logo que quiero, ¿Se puede trabajar con eso?
-                    </button>
-                </h2>
-                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        Sí, nos va a servir como inspiración, pero fundamentalmente vamos a crear un logo que va a
-                        depender del análisis del rubro, cómo te quieras posicionar y a quién te quieras dirigir. Hay
-                        que tener en cuenta muchas cosas técnicas para que toda la identidad tenga coherencia y sus
-                        elementos sean funcionales a la marca.
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        03 / ¿Se puede pagar mi proyecto en cuotas?
-                    </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        Sí, re sí y super SI! Dependiendo del servicio que contrates, contamos con varias instancias de
-                        pago. No somos ajenos a la realidad de los emprendedores, y sabemos que contratar un servicio de
-                        diseño requiere de una inversión costosa al inicio, pero que será recuperado y amortizado en las
-                        ganancias que tendrá tu marca, y por eso siempre estaremos dispuestos a darle posibilidades de
-                        pago a quienes quieran trabajar con nosotros.
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                        04 / ¿Se puede trabajar en el Packaging y Redes Sociales sin una identidad visual definida?
-                    </button>
-                </h2>
-                <div id="flush-collapseFour" class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        Para realizar cualquier tipo de diseño es elemental contar con paleta de colores, logo y
-                        tipografías. Por eso, si tu marca no tiene esos elementos definidos, primero debemos trabajar
-                        sobre eso.
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                        05 / ¿Hacen contenido y manejo de redes sociales?
-                    </button>
-                </h2>
-                <div id="flush-collapseFive" class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        No, solo hacemos los diseños que necesites acordes a tu branding para que tú los publiques, y
-                        también te ofrecemos nuestro ebook gratis sobre "365 ideas para publicar en redes sociales".
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-                        06 / ¿Se encargan de impresión y producto final?
-                    </button>
-                </h2>
-                <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        No, está en planes, pero por el momento solo realizamos el diseño de las piezas gráficas. Lo que
-                        sí solemos brindar como "extra" es el asesoramiento para lograr un mejor resultado en cuanto a
-                        producto final o impresión. Además, y siempre que nos sea posible, entregamos los archivos
-                        preparados según los requerimientos de la imprenta sin costo extra.
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
-                        07 / ¿Por qué debería yo gestionar mi branding?
-                    </button>
-                </h2>
-                <div id="flush-collapseSeven" class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        Deberías gestionar tu branding por dos motivos. El primero, es <strong>porque quieres vender más
-                            y hacerlo mejor.</strong> El branding mejora la visibilidad, construye confianza y fomenta
-                        la lealtad de tus clientes para que compren una y otra vez, permitiendo que tus productos y
-                        servicios se destaquen. Esto resulta en un aumento de ventas y en una relación más sólida con
-                        los clientes. Y el segundo motivo, es <strong>porque quieres una marca que trascienda. Aspiras a
-                            que tu marca deje huella,</strong> no solo en el mercado, sino en la cultura y la vida de
-                        las personas.
-                        De hecho es un fenomeno cultural. Necesitamos marcas que no existan solo para vender hoy, sino
-                        para ser recordadas y valoradas en el tiempo.</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
-                        08 / ¿De quién son los derechos del material producido por Simbolika en el desarrollo de
-                        cualquiera de sus proyectos?
-                    </button>
-                </h2>
-                <div id="flush-collapseEight" class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        El proyecto, la marca y el producto/servicio del cliente, son del cliente. Esto implica dos
-                        cosas: una, que el cliente es quien debe ayudarnos en el proceso e informarnos debidamente al
-                        respecto, de modo que nosotros podamos hacer nuestra mejor labor, al máximo de nuestras
-                        capacidades y conocimientos. Y dos, que los derechos de propiedad intelectual y comercial de los
-                        proyectos, las ideas, las marcas y los productos o servicios del cliente, son del cliente.
-                        Asimismo, la responsabilidad legal al respecto de ellos es, también del cliente.</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
-                        09 / ¿Cuánto tiempo lleva completar un proceso de branding?
-                    </button>
-                </h2>
-                <div id="flush-collapseNine" class="accordion-collapse collapse"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        El tiempo necesario para completar un proceso de branding puede variar según la complejidad y
-                        los requisitos específicos del proyecto. En Simbolika, trabajamos en estrecha colaboración
-                        contigo para entender tus necesidades y las de tu marca, y así poder establecer plazos
-                        realistas. Algunos proyectos pueden completarse en unas pocas semanas, mientras que otros más
-                        grandes y complejos pueden llevar más tiempo. Lo importante es mantener una comunicación fluida
-                        para cumplir con los plazos y ofrecerte resultados de alta calidad en el tiempo estipulado.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Botón de crear marca -->
-    <div>
-        <a href="j3-Contactos.html" class="crear-marca">Crear o Rediseñar mi marca </a>
-    </div>
-
+    </main>
     <!-- Pie -->
-    <footer class="contenedor-footer" style="width: 80%; align-items: center; justify-content: center; margin-left: 10%;">
+    <footer class="contenedor-footer"
+        style="width: 80%; align-items: center; justify-content: center; margin-left: 10%;">
         <h2 class="h2-footer">Síguenos en nuestras redes sociales</h2>
         <div class="redes-sociales">
-          <a href="https://www.instagram.com/simbolika.design" target="_blank">
-            <img src="Fotos y Videos/instagram.png" alt="Instagram" class="logoredes">
-          </a>
-          <a href="https://ar.pinterest.com/simbolikadesign" target="_blank">
-            <img src="Fotos y Videos/pinterest.png" alt="Pinterest" class="logoredes">
-          </a>
-          <a href="https://www.behance.net/florsimbolikadesign" target="_blank">
-            <img src="Fotos y Videos/behance.png" alt="Behance" class="logoredes">
-          </a>
+            <a href="https://www.instagram.com/simbolika.design" target="_blank">
+                <img src="Fotos y Videos/instagram.png" alt="Instagram" class="logoredes">
+            </a>
+            <a href="https://ar.pinterest.com/simbolikadesign" target="_blank">
+                <img src="Fotos y Videos/pinterest.png" alt="Pinterest" class="logoredes">
+            </a>
+            <a href="https://www.behance.net/florsimbolikadesign" target="_blank">
+                <img src="Fotos y Videos/behance.png" alt="Behance" class="logoredes">
+            </a>
         </div>
         <div class="footer-links">
-          <div>
-            <a href="index.html">Inicio</a>
-            <a href="j1-Nuestros-Servicios.html">Nuestros Servicios</a>
-            <a href="j1-Portfolio.html">Portfolio</a>
-            <a href="j1-Shop.html">Shop</a>
-            <a href="j2-Recursos.html">Recursos</a>
-            <a href="j5-sobre-mi.html">Sobre mi</a>
-            <a href="j3-Contactos.html">Contacto</a>
-          </div>
-          <div>
-            <a style="color: dimgray;" href="j4-Terminos-y-politicas.html">Términos & Condiciones</a>
-            <a style="color: dimgray;" href="j4-Terminos-y-politicas.html">Política de privacidad</a>
-            <a style="color: dimgray;" href="j4-Terminos-y-politicas.html">Política de Cookies</a>
-          </div>
+            <div>
+                <a href="index.html">Inicio</a>
+                <a href="j1-Nuestros-Servicios.html">Nuestros Servicios</a>
+                <a href="j1-Portfolio.html">Portfolio</a>
+                <a href="j1-Shop.html">Shop</a>
+                <a href="j2-Recursos.html">Recursos</a>
+                <a href="j5-sobre-mi.html">Sobre mi</a>
+                <a href="j3-Contactos.html">Contacto</a>
+            </div>
+            <div>
+                <a style="color: dimgray;" href="j4-Terminos-y-politicas.html">Términos & Condiciones</a>
+                <a style="color: dimgray;" href="j4-Terminos-y-politicas.html">Política de privacidad</a>
+                <a style="color: dimgray;" href="j4-Terminos-y-politicas.html">Política de Cookies</a>
+            </div>
         </div>
     </footer>
 

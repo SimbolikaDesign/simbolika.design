@@ -2,117 +2,142 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Portfolio | Simbolika Design</title>
-    <meta name="description"
-        content="Hago branding psico/emocional, te ayudo a impactar con tu marca en el inconsciente de las personas.">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Simbolika Design, Florencia Tello">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Portfolio | Simbolika Design</title>
+  <meta name="description"
+    content="Hago branding psico/emocional, te ayudo a impactar con tu marca en el inconsciente de las personas.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Simbolika Design, Florencia Tello">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <!-- Bootstrap JS (necesario para el carrusel) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+  <!-- Bootstrap JS (necesario para el carrusel) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
-    <!-- mi css style-->
-    <link rel="stylesheet" href="Css/style.css">
+  <!-- mi css style-->
+  <link rel="stylesheet" href="Css/style.css">
 </head>
 
 <body>
-    <!-- Header -->
-    <header>
-        <div id="box">
-            <img src="Fotos y Videos/logo simb bg.png" alt="Logotipo de Simbolika" class="logotipo">
+  <!-- Header para desktop -->
+  <header class="header-desktop">
+    <div id="box">
+      <img src="Fotos y Videos/logo simb bg.png" alt="Logotipo de Simbolika" class="logotipo">
 
-            <nav class="barra-navegacion">
-                <a href="index.html">Inicio</a>
-                <a href="j1-Nuestros-Servicios.html">Nuestros Servicios</a>
-                <a href="j1-Portfolio.html">Portfolio</a>
-                <a href="j1-Shop.html">Shop</a>
-                <a href="j2-Recursos.html">Recursos</a>
-                <a href="j5-sobre-mi.html">Sobre mi</a>
-                <a href="j3-Contactos.html">Contacto</a>
-            </nav>
-            <a href="j3-Contactos.html"><button class="crear-marca">Quiero crear mi marca</button></a>
+      <nav class="barra-navegacion">
+        <a href="index.html">Inicio</a>
+        <a href="j1-Nuestros-Servicios.html">Nuestros Servicios</a>
+        <a href="j1-Portfolio.html">Portfolio</a>
+        <a href="j1-Shop.html">Shop</a>
+        <a href="j2-Recursos.html">Recursos</a>
+        <a href="j5-sobre-mi.html">Sobre mi</a>
+        <a href="j3-Contactos.html">Contacto</a>
+      </nav>
+      <a href="j3-Contactos.html" class="crear-marca">Quiero crear mi marca</a>
+    </div>
+  </header>
+  <!-- Header para mobile-->
+  <header class="header-mobile">
+    <nav class="navbar navbar-expand-lg"
+      style="background-color: #f6f3f0; padding-left: 10px; padding-right: 10px; border-radius:10%;">
+      <a class="navbar-brand" href="#">
+        <img src="Fotos y Videos/logo simb bg.png" alt="Logo de Simbolika Design"
+          style="height: 70px; justify-content: right;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="index.html">Inicio</a>
+          <a class="nav-link" href="j1-Nuestros-Servicios.html">Servicios</a>
+          <a class="nav-link" href="j1-Portfolio.html">Portfolio</a>
+          <a class="nav-link" href="j1-Shop.html">Shop</a>
+          <a class="nav-link" href="j2-Recursos.html">Recursos</a>
+          <a class="nav-link" href="j5-sobre-mi.html">Sobre mi</a>
+          <a class="nav-link" href="j3-Contactos.html">Contacto</a>
         </div>
-    </header>
-    <br>
-    
+      </div>
+    </nav>
+  </header>
+  <br>
+  <main>
     <!-- Sección Portfolio -->
     <h1>Portfolio/Proyectos Recientes</h1>
     <br>
     <section class="portfolio">
-        <div class="cards-portfolio">
-            <img class="foto-portfolio" src="Fotos y Videos/mockups (2).png" alt="foto creatisanias">
-            <h2>Creatisanias</h2>
-            <p class="p-portfolio">Branding, Packaging y Papelería para Emprendimiento de Artesanías en Cerámica,
-                Macramé, Vitrofusión, Mosaiquismo y Puntillismo.</p>
-        </div>
-        <div class="cards-portfolio">
-            <img class="foto-portfolio" src="Fotos y Videos/flora.jpg" alt="foto flora relax studio">
-            <h2>Flora Relax Studio</h2>
-            <p class="p-portfolio">Branding y Papelería para Estudio de Manicuría y Podoestética</p>
-        </div>
-        <div class="cards-portfolio">
-            <img class="foto-portfolio" src="Fotos y Videos/Gift Card mockup 2.png" alt="foto galanas">
-            <h2>Galanas Relax Studio</h2>
-            <p class="p-portfolio">Branding y Social Media para Salón de belleza.</p>
-        </div>
-        <div class="cards-portfolio">
+      <div class="cards-portfolio">
+        <img class="foto-portfolio" src="Fotos y Videos/mockups (2).png" alt="foto creatisanias">
+        <h2>Creatisanias</h2>
+        <p class="p-portfolio">Branding, Packaging y Papelería para Emprendimiento de Artesanías en Cerámica,
+          Macramé, Vitrofusión, Mosaiquismo y Puntillismo.</p>
+      </div>
+      <div class="cards-portfolio">
+        <img class="foto-portfolio" src="Fotos y Videos/flora.jpg" alt="foto flora relax studio">
+        <h2>Flora Relax Studio</h2>
+        <p class="p-portfolio">Branding y Papelería para Estudio de Manicuría y Podoestética</p>
+      </div>
+      <div class="cards-portfolio">
+        <img class="foto-portfolio" src="Fotos y Videos/Gift Card mockup 2.png" alt="foto galanas">
+        <h2>Galanas Relax Studio</h2>
+        <p class="p-portfolio">Branding y Social Media para Salón de belleza.</p>
+      </div>
+      <div class="cards-portfolio">
 
-            <img class="foto-portfolio" src="Fotos y Videos/gif asg.gif" alt="asg video remera">
-            <h2>ASG Airsoft Special Group</h2>
-            <p class="p-portfolio">Branding y Aplicaciones para Equipo deportivo argentino de Airsoft</p>
-        </div>
-        <div class="cards-portfolio">
-            <img class="foto-portfolio" src="Fotos y Videos/virgi.jpg" alt="foto virginia">
-            <h2>Virginia Narvaez</h2>
-            <p class="p-portfolio">Branding Personal, Diseño y Desarrollo Web para Candidata Política.</p>
-        </div>
-        <div class="cards-portfolio">
-            <img class="foto-portfolio" src="Fotos y Videos/Mockup.png" alt="foto aleppo">
-            <h2>Aleppo, Cocina Sirio Libanesa</h2>
-            <p class="p-portfolio">Branding Packaging y Social Media para Restaurant de comida árabe.</p>
-        </div>
+        <img class="foto-portfolio" src="Fotos y Videos/gif asg.gif" alt="asg video remera">
+        <h2>ASG Airsoft Special Group</h2>
+        <p class="p-portfolio">Branding y Aplicaciones para Equipo deportivo argentino de Airsoft</p>
+      </div>
+      <div class="cards-portfolio">
+        <img class="foto-portfolio" src="Fotos y Videos/virgi.jpg" alt="foto virginia">
+        <h2>Virginia Narvaez</h2>
+        <p class="p-portfolio">Branding Personal, Diseño y Desarrollo Web para Candidata Política.</p>
+      </div>
+      <div class="cards-portfolio">
+        <img class="foto-portfolio" src="Fotos y Videos/Mockup.png" alt="foto aleppo">
+        <h2>Aleppo, Cocina Sirio Libanesa</h2>
+        <p class="p-portfolio">Branding Packaging y Social Media para Restaurant de comida árabe.</p>
+      </div>
     </section>
+  </main>
 
-
-    <!-- pie -->
-    <footer class="contenedor-footer" style="width: 80%; align-items: center; justify-content: center; margin-left: 10%;">
-        <h2 class="h2-footer">Síguenos en nuestras redes sociales</h2>
-        <div class="redes-sociales">
-          <a href="https://www.instagram.com/simbolika.design" target="_blank">
-            <img src="Fotos y Videos/instagram.png" alt="Instagram" class="logoredes">
-          </a>
-          <a href="https://ar.pinterest.com/simbolikadesign" target="_blank">
-            <img src="Fotos y Videos/pinterest.png" alt="Pinterest" class="logoredes">
-          </a>
-          <a href="https://www.behance.net/florsimbolikadesign" target="_blank">
-            <img src="Fotos y Videos/behance.png" alt="Behance" class="logoredes">
-          </a>
-        </div>
-        <div class="footer-links">
-          <div>
-            <a href="index.html">Inicio</a>
-            <a href="j1-Nuestros-Servicios.html">Nuestros Servicios</a>
-            <a href="j1-Portfolio.html">Portfolio</a>
-            <a href="j1-Shop.html">Shop</a>
-            <a href="j2-Recursos.html">Recursos</a>
-            <a href="j5-sobre-mi.html">Sobre mi</a>
-            <a href="j3-Contactos.html">Contacto</a>
-          </div>
-          <div>
-            <a style="color: dimgray;" href="j4-Terminos-y-politicas.html">Términos & Condiciones</a>
-            <a style="color: dimgray;" href="j4-Terminos-y-politicas.html">Política de privacidad</a>
-            <a style="color: dimgray;" href="j4-Terminos-y-politicas.html">Política de Cookies</a>
-          </div>
-        </div>
-    </footer>
+  <!-- pie -->
+  <footer class="contenedor-footer" style="width: 80%; align-items: center; justify-content: center; margin-left: 10%;">
+    <h2 class="h2-footer">Síguenos en nuestras redes sociales</h2>
+    <div class="redes-sociales">
+      <a href="https://www.instagram.com/simbolika.design" target="_blank">
+        <img src="Fotos y Videos/instagram.png" alt="Instagram" class="logoredes">
+      </a>
+      <a href="https://ar.pinterest.com/simbolikadesign" target="_blank">
+        <img src="Fotos y Videos/pinterest.png" alt="Pinterest" class="logoredes">
+      </a>
+      <a href="https://www.behance.net/florsimbolikadesign" target="_blank">
+        <img src="Fotos y Videos/behance.png" alt="Behance" class="logoredes">
+      </a>
+    </div>
+    <div class="footer-links">
+      <div>
+        <a href="index.html">Inicio</a>
+        <a href="j1-Nuestros-Servicios.html">Nuestros Servicios</a>
+        <a href="j1-Portfolio.html">Portfolio</a>
+        <a href="j1-Shop.html">Shop</a>
+        <a href="j2-Recursos.html">Recursos</a>
+        <a href="j5-sobre-mi.html">Sobre mi</a>
+        <a href="j3-Contactos.html">Contacto</a>
+      </div>
+      <div>
+        <a style="color: dimgray;" href="j4-Terminos-y-politicas.html">Términos & Condiciones</a>
+        <a style="color: dimgray;" href="j4-Terminos-y-politicas.html">Política de privacidad</a>
+        <a style="color: dimgray;" href="j4-Terminos-y-politicas.html">Política de Cookies</a>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>

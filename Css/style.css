@@ -1,5 +1,15 @@
 @charset "UTF-8";
 /*Estilos Generales de todas las paginas */
+
+/* Mostrar el header de desktop y ocultar el de mobile por defecto */
+.header-desktop {
+  display: block;
+}
+
+.header-mobile {
+  display: none;
+}
+
 body {
   background-color: #e8edeb;
   text-align: center;
@@ -812,50 +822,17 @@ fieldset legend {
 
 /* _________________________MEDIA QUERIES MOBILE_________________________ */
 @media (min-width: 320px) and (max-width: 599px) {
-  /* Media Queries MOBILE INICIO (iPhone 3/4/4s y similares)*/
-  #box {
-    border-radius: 80px;
-    background-color: #F6F3F0;
-    height: auto;
-    width: 300px;
-    margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .logotipo {
-    height: 70px;
-    width: auto;
-    padding-top: 5px;
-    padding-bottom: 0px;
-  }
-  .barra-navegacion {
-    font-size: 17px;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    display: table-column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 90%;
-    padding-top: 15px;
-  }
-  .barra-navegacion a {
-    flex: 0 1 calc(50% - 10px);
-    text-align: center;
-    padding: 5px;
-    box-sizing: border-box;
-    padding-top: 15px;
-  }
-  .crear-marca {
-    background-color: #533d43;
-    color: white;
-    border-radius: 50px;
-    padding: 10px;
-    font-size: 15px;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    cursor: pointer;
-    margin: 10px;
-  }
+
+/* Media Queries MOBILE INICIO (iPhone 3/4/4s y similares)*/
+
+.header-desktop {
+  display: none;
+}
+
+.header-mobile {
+  display: block;
+}
+
   .banner {
     width: 300px;
     height: auto;
@@ -912,11 +889,11 @@ fieldset legend {
     height: auto;
   }
   .h2-benef {
-    font-size: 30px;
+    font-size: 15px;
     padding: 10px;
   }
   .accordion-button {
-    font-size: 1.5rem;
+    font-size: 12px;
     padding-left: 20px;
   }
   .card-escena {
@@ -964,18 +941,21 @@ fieldset legend {
     flex-direction: column;
     align-items: center;
   }
+
   .redes-sociales {
     display: flex;
     flex-direction: row;
     gap: 7px;
     margin: 10px 0;
   }
+
   .logoredes {
     display: flex;
     flex-direction: row;
     width: 50px;
     height: auto;
   }
+
   footer a {
     margin: 0 10px;
     text-decoration: none;
