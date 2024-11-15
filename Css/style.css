@@ -70,6 +70,15 @@ ul ol {
   margin-left: 20px;
 }
 
+.h2-benef {
+  font-size: 40px;
+  font-family: "Relationship Of Mélodrame", sans-serif;
+  color: #674c53;
+  text-decoration: wavy;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
 /* Estilos de botones */
 a {
   text-decoration: none;
@@ -192,6 +201,8 @@ footer a {
 .banner {
   width: 100%;
   height: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 h1 {
@@ -272,26 +283,6 @@ section .marquee img {
     transform: translateX(-80%);
   }
 }
-/* Acordeon benef */
-.card-index h2.h2-benef {
-  font-size: 58px;
-  margin: 0;
-  padding: 0;
-}
-.card-index .accordion-item h2.accordion-header .accordion-button {
-  padding-left: 40px;
-  font-size: 40px;
-}
-.card-index .accordion-item h2.accordion-header .accordion-button:hover {
-  background-color: #f0f0f0;
-  color: rgba(51, 51, 51, 0.4196078431);
-}
-.card-index .accordion-item h2.accordion-header .accordion-collapse .accordion-body {
-  font-size: 35px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  padding: 0 30px 0 50px;
-  text-align: start;
-}
 
 /* Bio detrás de escena */
 .card-escena {
@@ -344,6 +335,10 @@ section .marquee img {
 
 h2.h2-benef {
   text-align: center;
+  font-size: 40px;
+  font-family: "Relationship Of Mélodrame", sans-serif;
+  color: #674c53;
+  text-decoration: wavy;
 }
 
 a.crear-marca {
@@ -970,72 +965,44 @@ fieldset legend {
     align-items: center;
     justify-content: center;
   }
-  /* Media Queries MOBILE SERVICIOS (iPhone 3/4/4s y similares)*/
-  #box {
-    border-radius: 80px;
-    background-color: #F6F3F0;
-    height: auto;
-    /* Alto */
-    width: 300px;
-    /* Ancho */
-    margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .logotipo {
-    height: 70px;
-    width: auto;
-    padding-top: 5px;
-    padding-bottom: 0px;
-  }
-  .barra-navegacion {
-    font-size: 17px;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    display: table-column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 90%;
-    padding-top: 15px;
-  }
-  .barra-navegacion a {
-    flex: 0 1 calc(50% - 10px);
-    text-align: center;
-    padding: 5px;
-    box-sizing: border-box;
-    padding-top: 15px;
-  }
-  .crear-marca {
-    background-color: #533d43;
-    color: white;
-    border-radius: 50px;
-    padding: 10px;
-    font-size: 15px;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    cursor: pointer;
-    margin: 10px;
-  }
-  .servicios {
-    grid-template-columns: 1fr;
-    padding-top: 20px;
-    gap: 10px;
-  }
-  .cards-servicios {
-    padding: 15px;
-    height: auto;
-    margin: 10px;
-  }
-  .imagenes-servicios {
-    width: 100%;
-    height: auto;
-  }
-  .p-card-serv {
-    font-size: 0.9rem;
-    margin-left: 0;
-    text-align: center;
-    width: 100%;
-  }
+  /* Media Queries MOBILE SERVICIOS (iPhone 3/4/4s y similares) */
+.servicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 5px;
+}
+
+.cards-servicios {
+  width: 100%;
+  max-width: 300px; /* Ancho máximo para pantallas pequeñas */
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.cards-servicios h2 {
+  font-size: 1.2rem;
+  margin: 10px;
+}
+
+.imagenes-servicios {
+  width: 100%; /* Ancho completo de la tarjeta */
+  height: auto; /* Mantener la proporción original */
+  display: block; /* Asegura que no haya espacio extra */
+}
+
+.p-card-serv {
+  width: 100%;
+  font-size: 0.85rem;
+  padding: 10px; /* Espaciado interno para legibilidad */
+  text-align: justify;
+}
+
+
   .card-faq {
     width: 100%;
     margin: 0;
