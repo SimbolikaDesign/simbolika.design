@@ -957,9 +957,10 @@ fieldset legend {
     gap: 5px;}
 
 .cards-servicios {
+  justify-self: center; 
   padding: 15px; 
   margin: 15px;
-  width: 100%;
+  width: 90%;
   height: auto;
   background-color: #f9f9f9;
   border-radius: 10px;
@@ -1052,6 +1053,7 @@ fieldset legend {
   }
 
   .cards-portfolio {
+    justify-self: center;
     width: 100%;
     height: auto;
     margin-bottom: 5px;
@@ -1081,7 +1083,7 @@ fieldset legend {
     font-family: Georgia, "Times New Roman", Times, serif;
     width: 100%;
     font-size: 0.85rem;
-    padding: 0px; 
+    padding-bottom: 10px !important; 
     text-align: center;
   }
 
