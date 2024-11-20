@@ -26,7 +26,9 @@ function actualizarCarrito() {
       var index = e.target.dataset.index;
       eliminarProducto(index);
     });
-  });
+  }); // Actualizar contador en el navbar
+
+  actualizarContadorCarrito();
 } // Función para eliminar un producto del carrito
 
 
@@ -56,20 +58,16 @@ if (carrito.length === 0) {
 
 if (vaciarCarritoBtn) {
   vaciarCarritoBtn.addEventListener("click", vaciarCarrito);
-}
+} // Verificar si el carrito está vacío y mostrar mensaje
 
-if (carrito.length === 0) {
-  carritoTableBody.innerHTML = "<tr><td colspan='5'>Tu carrito está vacío</td></tr>";
-} // Inicializar el carrito al cargar la página
-
-
-actualizarCarrito();
 
 if (carrito.length === 0) {
   carritoTableBody.innerHTML = "<tr><td colspan='5' class='text-center'>Tu carrito está vacío</td></tr>";
-} // MERCADO PAGO
-// Inicializar Mercado Pago
+} // Inicializar el carrito al cargar la página
 
+
+actualizarCarrito(); // MERCADO PAGO
+// Inicializar Mercado Pago
 
 var mp = new MercadoPago("APP_USR-5e5dee21-a872-4114-9c8b-0d73363bee5d", {
   locale: "es-AR" // Argentina
@@ -114,4 +112,14 @@ document.getElementById("btn-pagar").addEventListener("click", function () {
   })["catch"](function (error) {
     return console.error("Error:", error);
   });
-});
+}); // Función que actualiza el contador del carrito en el navbar
+
+function actualizarContadorCarrito() {
+  var contador = document.getElementById("cart-count"); // Sumar las cantidades de todos los productos en el carrito
+
+  var totalItems = carrito.reduce(function (total, producto) {
+    return total + producto.cantidad;
+  }, 0); // Actualizar el texto del contador
+
+  contador.textContent = totalItems;
+}

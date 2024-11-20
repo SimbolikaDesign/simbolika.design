@@ -26,51 +26,67 @@
 
     <!-- mi css style-->
     <link rel="stylesheet" href="Css/style.css">
+
+      <!-- Bootstrap Icons (para el icono de carrito en el nav bar)-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
 </head>
 
 <body>
     <!-- Header para desktop -->
     <header class="header-desktop">
         <div id="box">
-            <img src="Fotos y Videos/logo simb bg.png" alt="Logotipo de Simbolika" class="logotipo">
-
-            <nav class="barra-navegacion">
-                <a href="index.html">Inicio</a>
-                <a href="j1-Nuestros-Servicios.html">Nuestros Servicios</a>
-                <a href="j1-Portfolio.html">Portfolio</a>
-                <a href="j1-Shop.html">Shop</a>
-                <a href="j2-Recursos.html">Recursos</a>
-                <a href="j5-sobre-mi.html">Sobre mi</a>
-                <a href="j3-Contactos.html">Contacto</a>
-            </nav>
-            <a href="j3-Contactos.html" class="crear-marca">Quiero crear mi marca</a>
+          <img src="Fotos y Videos/logo simb bg.png" alt="Logotipo de Simbolika" class="logotipo">
+    
+          <nav class="barra-navegacion">
+            <a href="index.html">Inicio</a>
+            <a href="j1-Nuestros-Servicios.html">Nuestros Servicios</a>
+            <a href="j1-Portfolio.html">Portfolio</a>
+            <a href="j1-Shop.html">Shop</a>
+            <a href="j2-Recursos.html">Recursos</a>
+            <a href="j5-sobre-mi.html">Sobre mi</a>
+            <a href="j3-Contactos.html">Contacto</a>
+          </nav>
+          <a href="j2-carrito.html" class="cart-icon position-relative">
+            <i class="bi bi-cart"></i>
+            <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+          </a>
+          <a href="j3-Contactos.html" class="crear-marca">Quiero crear mi marca</a>
         </div>
     </header>
     <!-- Header para mobile-->
     <header class="header-mobile">
-        <nav class="navbar navbar-expand-lg"
-            style="background-color: #f6f3f0; padding-left: 10px; padding-right: 10px; border-radius:10%;">
-            <a class="navbar-brand" href="#">
-                <img src="Fotos y Videos/logo simb bg.png" alt="Logo de Simbolika Design"
-                    style="height: 70px; justify-content: right;">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f6f3f0; padding-left: 10px; padding-right: 10px; border-radius: 10%;">
+          <div class="d-flex w-100 justify-content-between align-items-center">
+            <a class="navbar-brand" href="index.html">
+              <img src="Fotos y Videos/logo simb bg.png" alt="Logo de Simbolika Design" style="height: 50px; max-width: 100%; object-fit: contain;">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link" href="index.html">Inicio</a>
-                    <a class="nav-link" href="j1-Nuestros-Servicios.html">Servicios</a>
-                    <a class="nav-link" href="j1-Portfolio.html">Portfolio</a>
-                    <a class="nav-link" href="j1-Shop.html">Shop</a>
-                    <a class="nav-link" href="j2-Recursos.html">Recursos</a>
-                    <a class="nav-link" href="j5-sobre-mi.html">Sobre mi</a>
-                    <a class="nav-link" href="j3-Contactos.html">Contacto</a>
-                </div>
+            <div class="d-flex align-items-center">
+              <a href="j1-Shop.html" class="btn btn-link text-dark">
+                <span class="cart-icon">
+                  <i class="bi bi-cart"></i> 
+                </span>
+                <span id="cart-count" class="badge bg-danger rounded-circle">0</span> 
+              </a>
             </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+    
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="index.html">Inicio</a>
+              <a class="nav-link" href="j1-Nuestros-Servicios.html">Servicios</a>
+              <a class="nav-link" href="j1-Portfolio.html">Portfolio</a>
+              <a class="nav-link" href="j1-Shop.html">Shop</a>
+              <a class="nav-link" href="j2-Recursos.html">Recursos</a>
+              <a class="nav-link" href="j5-sobre-mi.html">Sobre mi</a>
+              <a class="nav-link" href="j3-Contactos.html">Contacto</a>
+            </div>
+          </div>
         </nav>
-    </header>
+      </header>
     <main>
         <h1>Nuestros servicios/<em>Para impactar fuerte</em></h1>
 

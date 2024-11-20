@@ -36,6 +36,9 @@ function actualizarCarrito() {
       eliminarProducto(index);
     });
   });
+
+  // Actualizar contador en el navbar
+  actualizarContadorCarrito();
 }
 
 // Función para eliminar un producto del carrito
@@ -51,28 +54,25 @@ function vaciarCarrito() {
   carrito.length = 0; // Vaciar el array en memoria
   actualizarCarrito(); // Refrescar la tabla
 }
+
 if (carrito.length === 0) {
   vaciarCarritoBtn.disabled = true;  // Desactivar el botón si el carrito está vacío
 } else {
   vaciarCarritoBtn.disabled = false;
 }
 
-
 // Asignar evento al botón "Vaciar carrito"
 if (vaciarCarritoBtn) {
   vaciarCarritoBtn.addEventListener("click", vaciarCarrito);
 }
-if (carrito.length === 0) {
-  carritoTableBody.innerHTML = "<tr><td colspan='5'>Tu carrito está vacío</td></tr>";
-}
 
-
-// Inicializar el carrito al cargar la página
-actualizarCarrito();
+// Verificar si el carrito está vacío y mostrar mensaje
 if (carrito.length === 0) {
   carritoTableBody.innerHTML = "<tr><td colspan='5' class='text-center'>Tu carrito está vacío</td></tr>";
 }
 
+// Inicializar el carrito al cargar la página
+actualizarCarrito();
 
 // MERCADO PAGO
 
@@ -80,7 +80,6 @@ if (carrito.length === 0) {
 const mp = new MercadoPago("APP_USR-5e5dee21-a872-4114-9c8b-0d73363bee5d", {
   locale: "es-AR", // Argentina
 });
-
 
 document.getElementById("btn-pagar").addEventListener("click", () => {
   // Crear preferencia en el servidor o con enlaces directos
@@ -116,3 +115,12 @@ document.getElementById("btn-pagar").addEventListener("click", () => {
     })
     .catch((error) => console.error("Error:", error));
 });
+
+// Función que actualiza el contador del carrito en el navbar
+function actualizarContadorCarrito() {
+  const contador = document.getElementById("cart-count");
+  // Sumar las cantidades de todos los productos en el carrito
+  const totalItems = carrito.reduce((total, producto) => total + producto.cantidad, 0);
+  // Actualizar el texto del contador
+  contador.textContent = totalItems;
+}
