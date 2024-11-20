@@ -77,9 +77,11 @@ actualizarCarrito();
 // MERCADO PAGO
 
 // Inicializar Mercado Pago
-const mp = new MercadoPago("APP_USR-5e5dee21-a872-4114-9c8b-0d73363bee5d", {
-  locale: "es-AR", // Argentina
+
+const mp = new MercadoPago("APP_USR-851629657633151-112002-bf5103980148e4f9a62c4cd42215436c-2109266914", {
+  locale: "es-AR",
 });
+
 
 document.getElementById("btn-pagar").addEventListener("click", () => {
   // Crear preferencia en el servidor o con enlaces directos
@@ -87,7 +89,7 @@ document.getElementById("btn-pagar").addEventListener("click", () => {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      Authorization: "APP_USR-851629657633151-112002-bf5103980148e4f9a62c4cd42215436c-2109266914",
+      Authorization: "APP_USR-5e5dee21-a872-4114-9c8b-0d73363bee5d",
     },
     body: JSON.stringify({
       items: carrito.map((producto) => ({
