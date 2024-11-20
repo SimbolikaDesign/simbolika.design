@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Ruta para crear preferencias de pago
 app.post('/create_preference', (req, res) => {
   const preference = {
-    items: req.body.items,
+    items: req.body.items, // Obtiene los items enviados desde el frontend
     back_urls: {
       success: "https://www.tusitioweb.com/success",
       failure: "https://www.tusitioweb.com/failure",
@@ -28,7 +28,7 @@ app.post('/create_preference', (req, res) => {
   mercadopago.preferences
     .create(preference)
     .then((response) => {
-      res.json({ id: response.body.id });
+      res.json({ init_point: response.body.init_point }); // Devuelve la URL para redirigir al pago
     })
     .catch((error) => {
       console.error("Error al crear la preferencia:", error);
@@ -40,3 +40,6 @@ app.post('/create_preference', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en el puerto ${PORT}`);
 });
+
+////////////////////////////////////////////////////////////////////////////
+

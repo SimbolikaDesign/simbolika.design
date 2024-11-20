@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <script src="https://sdk.mercadopago.com/js/v2"></script>
+</head>
+<body>
+  <button id="btn-pagar">Pagar con Mercado Pago</button>
+
+  <script>
+    const mp = new MercadoPago("APP_USR-5e5dee21-a872-4114-9c8b-0d73363bee5d", { /*mi public key de produccion*/
+      locale: "es-AR"
+    });
+
+    document.getElementById("btn-pagar").addEventListener("click", function () {
+      fetch("/create_preference", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          carrito: [
+            {
+              title: "Producto Ejemplo",
+              quantity: 1,
+              unit_price: 100
+            }
+          ]
+        })
+      })
+      .then(response => response.json())
+      .then(preference => {
+        mp.checkout({
+          preference: {
+            id: preference.id
+          },
+          autoOpen: true
+        });
+      });
+    });
+  </script>
+</body>
+</html>
