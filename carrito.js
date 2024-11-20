@@ -73,3 +73,46 @@ if (carrito.length === 0) {
   carritoTableBody.innerHTML = "<tr><td colspan='5' class='text-center'>Tu carrito está vacío</td></tr>";
 }
 
+
+// MERCADO PAGO
+
+// Inicializar Mercado Pago
+const mp = new MercadoPago("APP_USR-5e5dee21-a872-4114-9c8b-0d73363bee5d", {
+  locale: "es-AR", // Argentina
+});
+
+
+document.getElementById("btn-pagar").addEventListener("click", () => {
+  // Crear preferencia en el servidor o con enlaces directos
+  fetch("https://api.mercadopago.com/checkout/preferences", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: "APP_USR-851629657633151-112002-bf5103980148e4f9a62c4cd42215436c-2109266914",
+    },
+    body: JSON.stringify({
+      items: carrito.map((producto) => ({
+        title: producto.nombre,
+        quantity: producto.cantidad,
+        unit_price: producto.precio,
+        currency_id: "ARS", 
+      })),
+      back_urls: {
+        success: "https://www.tusitioweb.com/descarga.html", // URL post pago exitoso
+        failure: "https://www.tusitioweb.com/error.html",
+        pending: "https://www.tusitioweb.com/pago-pendiente.html",
+      },
+      auto_return: "approved", // Redirige automáticamente tras el pago exitoso
+    }),
+  })
+    .then((response) => response.json())
+    .then((preference) => {
+      mp.checkout({
+        preference: {
+          id: preference.id,
+        },
+        autoOpen: true, // Abre automáticamente el checkout
+      });
+    })
+    .catch((error) => console.error("Error:", error));
+});
