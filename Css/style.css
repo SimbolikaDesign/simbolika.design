@@ -521,7 +521,7 @@ h3.h3-banda {
 }
 
 .p-plantillas {
-  font-size: 25px;
+  font-size: 20px !important;
 }
 
 .cards-shop {
@@ -819,6 +819,59 @@ fieldset legend {
   50% { border-color: rgba(0, 0, 0, 0.438); }
 }
 
+/*   PAGINA   CARRITO   */
+
+#carrito-container {
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  max-width: 800px;
+}
+
+#carrito {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#carrito th, #carrito td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+#carrito-total {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#vaciar-carrito {
+  background-color: #ff6f61;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#vaciar-carrito:hover {
+  background-color: #e55a4e;
+}
+#proceder-pago {
+  background-color: green;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+#proceder-pago:hover {
+  background-color: rgb(2, 112, 2);
+}
 
 
 
