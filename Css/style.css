@@ -20,10 +20,16 @@ body {
 }
 
 /* Estilos de texto */
+
 @font-face {
-  font-family: "Relationsip Of Mélodrame";
-  src: url("Fonts/relationship-of-melodrame.ttf") format("truetype");
-}
+  font-family: "Relationship of Mélodrame";
+  src: url("Fonts/Relationship of mélodrame.woff2") format("woff2");}
+
+@font-face {
+    font-family: "Fifty Holli";
+    src: url("Fonts/Fifty Holliwing.woff2") format("woff2");
+  } 
+  
 h1,
 h2,
 h3,
@@ -58,8 +64,8 @@ h4 {
 }
 
 p {
+  font-family: "Fifty Holli", Georgia, 'Times New Roman', Times, serif ;
   font-size: 20px;
-  font-family: Georgia, "Times New Roman", Times, serif;
   text-align: left;
   margin: 10px 0;
 }
@@ -95,7 +101,7 @@ a:hover {
   border-radius: 30px;
   padding: 10px;
   font-size: 17px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Fifty Holli", Georgia, "Times New Roman", Times, serif;
   cursor: pointer;
   margin: 10px;
 }
@@ -162,7 +168,7 @@ header #box .barra-navegacion {
 footer {
   border-radius: 80px;
   font-size: 18px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Fifty Holli", Georgia, "Times New Roman", Times, serif;
   margin-top: 20px;
   padding: 20px;
   background-color: #F6F3F0;
@@ -220,7 +226,7 @@ h1 {
 .banda-containerindex .banda-textolinks {
   display: flex;
   white-space: nowrap;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Fifty Holli", Georgia, "Times New Roman", Times, serif;
   font-size: 2rem;
   color: rgb(211, 203, 203);
 }
@@ -254,7 +260,7 @@ h1 {
 }
 .card-index .parrafo-index {
   font-size: 20px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Fifty Holli", Georgia, "Times New Roman", Times, serif;
   margin: 0 20px;
 }
 
@@ -1292,7 +1298,8 @@ fieldset legend {
     text-align: center;
   }
   h2 {
-    font-size: 1.7rem;
+    font-family: relationship ;
+    font-size: 2rem !important;
     text-align: center;
   }
   h3 {
@@ -1300,8 +1307,9 @@ fieldset legend {
     margin-bottom: 20px;
   }
   p {
+    margin: 5%;
     font-size: 1rem;
-    text-align: center;
+    text-align: justify;
   }
 
   .diccionario-grilla {
