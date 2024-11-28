@@ -1139,8 +1139,6 @@ fieldset legend {
     padding-bottom: 10px !important; 
     text-align: center;
   }
-
-
   .h2-footer {
     font-size: 2rem;
   }
@@ -1197,7 +1195,6 @@ fieldset legend {
     font-size: 1rem;
   }
 
-
   .p-plantillas {
     font-size: 0.9rem;
     padding: 10px 8px;
@@ -1218,7 +1215,7 @@ fieldset legend {
       text-align: center;  
     }
 
-    .pack-full {
+  .pack-full {
       display: flex;
     flex-direction: column;
     align-items: center;
@@ -1294,10 +1291,19 @@ fieldset legend {
     font-size: 2.4rem;
     text-align: center;
   }
+  h2 {
+    font-size: 1.7rem;
+    text-align: center;
+  }
   h3 {
     font-size: 1rem;
     margin-bottom: 20px;
   }
+  p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
   .diccionario-grilla {
     display: grid !important;
     grid-template-columns: 1fr !important;    
@@ -1314,7 +1320,7 @@ fieldset legend {
   }
 
   .baseline-dicc {
-    font-size: 1.2rem;
+    font-size: 0.7rem;
     text-align: center;
   }
   .section-blog {
