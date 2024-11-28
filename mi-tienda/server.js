@@ -18,9 +18,9 @@ app.post('/create_preference', (req, res) => {
   const preference = {
     items: req.body.items, // Obtiene los items enviados desde el frontend
     back_urls: {
-      success: "https://www.tusitioweb.com/success",
-      failure: "https://www.tusitioweb.com/failure",
-      pending: "https://www.tusitioweb.com/pending",
+      success: "https://simbolikadesign.github.io/simbolika.design/j2-descargaexitosa.html",
+      failure: "https://simbolikadesign.github.io/simbolika.design/j2-descargafallida.html",
+      pending: "https://simbolikadesign.github.io/simbolika.design/j2-descargapendiente.html",
     },
     auto_return: "approved",
   };
