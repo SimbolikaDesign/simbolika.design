@@ -115,6 +115,7 @@ a:hover {
 }
 
 /* Estilo general de las cards de todas las paginas */
+
 .plantilla-card {
   display: flex;
   flex-direction: column;
@@ -205,7 +206,7 @@ footer a {
 
 /*banner, h1, Banda CTA, Parrafo Psico-Branding*/
 .banner {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -218,7 +219,7 @@ h1 {
 }
 
 .banda-containerindex {
-  width: 100%;
+  max-width: 100%;
   overflow: hidden;
   background-color: rgba(83, 61, 67, 0.9607843137);
   padding: 10px;
